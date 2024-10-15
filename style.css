@@ -21,6 +21,9 @@ p {
 .button-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 button {
     background-color: #2980b9;
@@ -31,9 +34,8 @@ button {
     margin: 10px 0;
     cursor: pointer;
     font-size: 16px;
-    width: 40%;
-    align-items: center;
-    justify-content: center;
+    width: 20%;
+    text-align: center;
 }
 button:hover {
     background-color: #3498db;
