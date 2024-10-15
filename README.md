@@ -21,3 +21,12 @@ The Caffeine Tracker app is an online tool designed to help you and your friends
 - Favorite Drinks Overview: See a visual list of your favorite drinks and their caffeine content.
 - Visit Friends’ Profiles: Check out friends’ profiles to see their intake and goals for the day.
 - Friends List: Easily access other users’ profiles and stay connected.
+
+## Technologies Used
+
+HTML5 / CSS3 (responsive design)
+JavaScript (for interactive features)
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
