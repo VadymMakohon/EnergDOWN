@@ -6,7 +6,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to right, #E22865, #37ADCD);
 }
 h1 {
     text-align: center;
