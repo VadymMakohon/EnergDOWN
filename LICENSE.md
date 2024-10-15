@@ -1,9 +1,9 @@
-MIT License
+MIT-lisens
 
-Copyright (c) 2024 Vadym Makohon
+Opphavsrett (c) 2024 Vadym Makohon
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Herved gis tillatelse, vederlagsfritt, til enhver person som mottar en kopi av denne programvaren og tilhørende dokumentasjonsfiler (heretter kalt "Programvaren"), til å håndtere Programvaren uten restriksjoner, inkludert uten begrensning rettighetene til å bruke, kopiere, modifisere, slå sammen, publisere, distribuere, underlisensiere og/eller selge kopier av Programvaren, og til å tillate personer som Programvaren er levert til å gjøre det samme, underlagt følgende betingelser:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Ovennevnte opphavsrettsmerknad og denne tillatelsen skal inkluderes i alle kopier eller vesentlige deler av Programvaren.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+PROGRAMVAREN LEVERES "SOM DEN ER", UTEN GARANTI AV NOE SLAG, UTTRYKT ELLER UNDERFORSTÅTT, INKLUDERT MEN IKKE BEGRENSET TIL GARANTIER OM SALGBARHET, EGNETHET FOR ET BESTEMT FORMÅL OG IKKE-KRENKELSE. UNDER INGEN OMSTENDIGHETER SKAL FORFATTERNE ELLER OPPHAVSRETTSEIERNE HOLDES ANSVARLIGE FOR NOEN KRAV, SKADER ELLER ANNET ANSVAR, ENTEN I EN KONTRAKTSAKSJON, TORT ELLER PÅ ANNEN MÅTE, SOM FØLGER AV, UTVIKLER SEG FRA ELLER I FORBINDELSE MED PROGRAMVAREN ELLER BRUKEN AV ELLER ANDRE FORHOLD I PROGRAMVAREN.
