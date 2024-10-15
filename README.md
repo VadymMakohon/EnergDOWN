@@ -29,3 +29,9 @@ JavaScript (for interactive features)
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+# Contributors
+
+- [Vadym Makohon](https://github.com/VadymMakohon)
+- [Christopher Klepp](https://github.com/christopherkp)
+- [Thomas Lund Åsen](https://github.com/Rullekake)
+- [Egidijus Evilimas](https://github.com/evilimas)
