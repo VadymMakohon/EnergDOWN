@@ -92,14 +92,33 @@ const model = {
             email: '',
             password: '',
             image: '',
-            goalRegistrations: [
-                { goal: '', goalProgression: '', date: '', },
-            ],
-            friendsList: [],
-            favoriteDrinks: [],
-            receivedComments: [],
-            sentComments: [],
         }
     ],
 
+    goals: [
+        {
+            id: '',
+            goal: '',
+            date: '',
+            userId: '',
+        }
+    ]
+
+    drinks: [
+        {
+            id: '',
+            name: '',
+            caffeineContent: '',
+            drinkImage: '',
+        }
+    ],
+
+    favoriteDrinks: [
+        {
+            userId: '',
+            name: '',
+            isFavorite: true,
+
+        }
+    ]
 }
