@@ -29,8 +29,8 @@ EnergDOWN-appen er et nettbasert verktøy designet for å hjelpe deg og dine ven
 
 ## Teknologier Brukt
 
-HTML5 / CSS3
-JavaScript
+- HTML5 / CSS3
+- JavaScript
 
 ## Lisens
 
