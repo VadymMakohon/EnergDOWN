@@ -34,31 +34,23 @@ const model = {
         },
 
         loggedInUserProfile: {
-            sentComments: [],
-            favoriteDrinks: [],
+           
         },
 
         userProfilePage: {
-            sentComments: [],
-            friendsList: [],
+            
         },
 
         addDrinkPage: {
-            goalRegistrations: [
-                { goal: '', goalProgression: '', date: '', },
-            ],
-            favoriteDrinks: [],
-            drinksBeforeConfirmation: [],
+            
+           
         },
 
         editGoalPage: {
-            goalRegistrations: [
-                { goal: '', goalProgression: '', date: '', },
-            ],
+           
         },
 
         friendsListPage: {
-            friendList: [],
             searchFriend: '',
         },
 
@@ -78,7 +70,6 @@ const model = {
             drinkName: '',
             coffeineContent: '',
             drinkImage: '',
-            favoriteDrinks: [],
         },
 
     },
@@ -92,14 +83,30 @@ const model = {
             email: '',
             password: '',
             image: '',
-            goalRegistrations: [
-                { goal: '', goalProgression: '', date: '', },
-            ],
-            friendsList: [],
-            favoriteDrinks: [],
-            receivedComments: [],
-            sentComments: [],
+            
         }
+    ],
+
+    goals: [
+        {
+            id: '',
+            goal: '',
+            date: '',
+            userId: '',
+        }
+    ],
+
+    drinks: [
+        {
+            drinkId: '',
+            name: '',
+            coffeineContent: '',
+            drinkImage: '',
+        }
+    ],
+
+    favoriteDrinks: [
+        { userId: 1, drinkId: 1, isFavorite: true},
     ],
 
 }
