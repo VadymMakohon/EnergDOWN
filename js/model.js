@@ -9,9 +9,6 @@
         // Del 2: Inputs
         inputs: {
     
-            startPage: {
-            },
-    
             createAccountPage: {
                 username: '',
                 email: '',
@@ -23,10 +20,6 @@
             loginPage: {
                 username: '',
                 password: '',
-            },
-    
-    
-            landingPage: {
             },
     
     
@@ -79,7 +72,7 @@
     
         users: [
             {
-                userId: 0,
+                id: 0,
                 username: '',
                 email: '',
                 password: '',
@@ -89,9 +82,9 @@
     
         goals: [
             {
-                goalId: 0,
+                id: 0,
                 goal: 0,
-                goalProgression: 0,
+                progression: 0,
                 date: '',
                 userId: '',
             }
@@ -99,38 +92,42 @@
     
         drinks: [
             {
+                userId: null,
                 drinkId: 0,
                 name: 'Battery',
                 caffeineContent: 50,
-                drinkImage: 'battery.png',
+                image: 'battery.png',
             },
             {
+                userId: null,
                 drinkId: 1,
                 name: 'Kaffe',
                 coffeineContent: 50,
-                drinkImage: 'kaffe.png',
+                image: 'kaffe.png',
             },
             {
+                userId: null,
                 drinkId: 2,
                 name: 'Redbull',
                 coffeineContent: 50,
-                drinkImage: 'redbull.png',
+                image: 'redbull.png',
             }
         ],
-    
-        customDrinks: [
-            { userId: 1, customDrinkName: '', customDrinkImage: '', customDrinkId: 2, isFavorite: true },
+        
+        favoriteDrinks: [
+            {userId: 1, drinkId: 1},
         ],
     
-        friendLists: [
-            { userId: 1, friendId: 2, isFriend: true },
-            { userId: 1, friendId: 3, isFriend: true },
-            { userId: 1, friendId: 4, isFriend: true },
-            { userId: 2, friendId: 1, isFriend: true },
-            { userId: 2, friendId: 3, isFriend: true },
-            { userId: 2, friendId: 4, isFriend: true },
+        friends: [
+            { userId: 1, friendId: 2},
+            { userId: 1, friendId: 3},
+            { userId: 1, friendId: 4},
+            { userId: 2, friendId: 1},
+            { userId: 2, friendId: 3},
+            { userId: 2, friendId: 4},
         ],
-    
+        
+        //Se om vi kan utvide dette inn i drinks
         selectedDrinks: [
             { userId: 1, drinkId: 1, isCustom: false},
             { userId: 1, drinkId: 2, isCustom: false},
