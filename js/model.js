@@ -34,20 +34,20 @@ const model = {
         },
 
         loggedInUserProfile: {
-           
+
         },
 
         userProfilePage: {
-            
+
         },
 
         addDrinkPage: {
-            
-           
+
+
         },
 
         editGoalPage: {
-           
+
         },
 
         friendsListPage: {
@@ -76,20 +76,20 @@ const model = {
 
     // Del 3: Felles data
 
-    registeredAccounts: [
+    users: [
         {
             id: 0,
             username: '',
             email: '',
             password: '',
             image: '',
-            
+
         }
     ],
 
     goals: [
         {
-            id: '',
+            goalId: '0',
             goal: '',
             date: '',
             userId: '',
@@ -98,7 +98,7 @@ const model = {
 
     drinks: [
         {
-            drinkId: '',
+            drinkId: '0',
             name: '',
             coffeineContent: '',
             drinkImage: '',
@@ -106,7 +106,7 @@ const model = {
     ],
 
     favoriteDrinks: [
-        { userId: 1, drinkId: 1, isFavorite: true},
+        { userId: 1, drinkId: 1, isFavorite: true },
     ],
 
 }
