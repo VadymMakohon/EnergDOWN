@@ -18,7 +18,7 @@
   <script src="js/addDrinkController.js"></script>
   <script src="js/addDrinkView.js"></script>
   <script src="js/createUserController.js"></script>
-  <script src="js/startpageView.js"></script>
+  <script src="js/startView.js"></script>
   <script src="js/loginView.js"></script>
 
 </head>
@@ -30,7 +30,7 @@
     <script>
         updateView();
         function updateView() {
-            if (model.app.currentPage == 'startPage') updateViewStartpage();
+            if (model.app.currentPage == 'startPage') updateViewStart();
             else if (model.app.currentPage == 'loginPage') updateViewLogin();
         }
     </script>

@@ -1,4 +1,4 @@
-function updateViewStartpage() {
+function updateViewStart() {
     document.getElementById('app').innerHTML = /*HTML*/`
     <header>
     <h1>Velkommen</h1>
