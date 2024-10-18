@@ -1,5 +1,5 @@
 function updateViewStart() {
-    document.getElementById('app').innerHTML = /*HTML*/`
+  document.getElementById('app').innerHTML = /*HTML*/`
     <header>
     <h1>Velkommen</h1>
     <p>
@@ -9,7 +9,7 @@ function updateViewStart() {
 
     <div class="button-container">
       <button onclick="goToPage('loginPage')">Logg inn</button>
-      <button onclick="alert()">Opprett bruker</button>
+      <button onclick="goToPage('createUserPage')">Opprett bruker</button>
     </div>
   </header>
     `;
