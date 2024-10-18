@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <title>EnergDOWN</title>
 
+  <script src="js/commonController.js"></script>
   <script src="js/addDrink.js"></script>
   <script src="js/model.js"></script>
   <script src="js/profileController.js"></script>
@@ -17,24 +18,22 @@
   <script src="js/addDrinkController.js"></script>
   <script src="js/addDrinkView.js"></script>
   <script src="js/createUserController.js"></script>
+  <script src="js/startpageView.js"></script>
+  <script src="js/loginView.js"></script>
 
 </head>
 
 <body>
   <main>
-    <header>
-      <h1>Velkommen</h1>
-      <p>
-        På denne nettsiden kan du holde oversikt over ditt koffeininntak. Du
-        kan sette deg daglige mål og motta motivasjon for å nå dem.
-      </p>
+    <div id="app"></div>
 
-      <div class="button-container">
-        <button onclick="alert()">Logg inn</button>
-        <button onclick="alert()">Opprett bruker</button>
-      </div>
-    </header>
-
+    <script>
+        updateView();
+        function updateView() {
+            if (model.app.currentPage == 'startPage') updateViewStartpage();
+            else if (model.app.currentPage == 'loginPage') updateViewLogin();
+        }
+    </script>
 
   </main>
 
