@@ -2,7 +2,8 @@
         // Del 1: 
         app: {
             currentPage: 'startPage',
-            // createAccountPage, loginPage, landingPage, loggedInUserProfile, userProfilePage, viewHistoryPage, addDrinkPage, addCustomDrinkPage, editGoalPage, editProfilePage, friendsListPage
+            // createAccountPage, loginPage, landingPage, landingpageWithFriends, loggedInUserProfile, userProfile, 
+            //viewHistoryPage, addDrinkPage, addCustomDrinkPage, editGoalPage, editProfilePage, friendsListPage
             loggedIn: false,
         },
     
