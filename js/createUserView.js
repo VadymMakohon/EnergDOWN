@@ -21,7 +21,19 @@ function updateViewCreateUser() {
         </div>
         <button class="create-user">Opprett din bruker</button>
     </form>
-    
-    
+    <script>
+        
+    </script>
     `;
 }
+
+document
+  .getElementById('createUserForm')
+  .addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const username = document.querySelector('input[type="text"]').value;
+    const email = document.querySelector('input[type="email"]').value;
+    const password = document.querySelector('input[type="password"]').value;
+    const image = document.querySelector('input[type="file"]').value;
+  });
