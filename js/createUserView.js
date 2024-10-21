@@ -2,6 +2,7 @@ function updateViewCreateUser() {
   document.getElementById('app').innerHTML = /*HTML*/ `
     
     <div class="container-cuv">
+    
       <div class="left">
         <input type="text" placeholder="Brukernavn:" required/>
         <input type="email" placeholder="E-post:" required/>
@@ -15,11 +16,12 @@ function updateViewCreateUser() {
           style="display: none"
         />
         <label for="fileInput" class="image-label">
-          <img id="imagePreview" src="" alt="Egendefinert bilde" />
+          <span class="image-text">Egendefinert bilde</span>
         </label>
       </div>
     </div>
     <button class="create-user">Opprett din bruker</button>
+    
     
     
     `;
