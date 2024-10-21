@@ -79,14 +79,14 @@
                 email: '',
                 password: '',
                 image: '',
-            }
+            },
             {
                 id: 1,
                 username: 'admin',
                 email: 'admin@getacademy.no',
                 password: '1234',
                 image: '',
-            }
+            },
             {
                 id: 2,
                 username: 'Rullekake',

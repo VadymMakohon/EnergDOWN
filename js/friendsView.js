@@ -91,3 +91,4 @@ function updateViewFriendsList() {
         console.log('Logout button clicked!');
 
     });
+}
