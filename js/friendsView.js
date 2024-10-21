@@ -1,6 +1,10 @@
 function updateViewFriendsList() {
     document.getElementById('app').innerHTML = /*HTML*/`
         <style>
+            body {
+                background-image: linear-gradient(to right, #E22865, #37ADCD);
+            }
+
             .friends-view {
                 padding: 20px;
                 max-width: 400px;
