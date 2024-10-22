@@ -2,7 +2,7 @@ function updateViewEditProfile() {
   document.getElementById('app').innerHTML = /*HTML*/ `
     <div class="container-acdv">
         <div class="btn-div">
-            <button class="back-btn">Tilbake</button>
+            <button class="back-btn" onClick="goToPage('userProfilePage')">Tilbake</button>
         </div>
         <div class="left">
             <input type="text" placeholder="Brukernavn:" required/>
