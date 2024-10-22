@@ -1,8 +1,6 @@
 function updateViewMain() {
     document.getElementById('app').innerHTML = /*HTML*/`
-    <button onclick="goToPage('loggedInUserProfilePage')">Profil</button>
-    <button onclick="logOut()">Logg ut</button>
-    <button onclick="goToPage('mainWithFriendsPage')">Venneliste</button>
+    ${createNavigationHtml()}
     <header>
             
             
