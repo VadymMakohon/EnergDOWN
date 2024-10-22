@@ -3,7 +3,7 @@ function logIn() {
     const username = inputs.username;
     const password = inputs.password;
     if (userExists(username, password)) {
-        model.app.loggedInAsUserId = true;
+        model.app.loggedIn = true;
         goToPage('mainPage');
     } else {
         model.inputs.loginPage.error = 'Ugyldig brukernavn eller passord';
