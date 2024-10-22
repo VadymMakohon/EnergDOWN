@@ -17,3 +17,5 @@ function createNavigationHtml() {
         </div>
     `;
 }
+
+function showFriendList() {}
