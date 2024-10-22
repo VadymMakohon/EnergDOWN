@@ -4,14 +4,14 @@ function createNavigationHtml() {
   if (model.app.loggedIn == true) {
     buttonsHtml = `<button class="profile-page-button" onclick="goToPage('loggedInUserProfilePage')">Profil</button>
                     <button class="loggut-button" onclick="logOut()">Logg ut</button>`;
-    friendsListButton = `<button class="friends-button" onclick="logOut()">Venne liste</button>`;
+    friendsListButton = `<button class="friends-button" onclick="showFriendList()">Venne liste</button>`;
   }
   return /*HTML*/ `
         <div class="navigation">
             <nav class="nav-buttons">
               ${buttonsHtml}
             </nav>
-            <h2 class="name">EnergDOWN</h2>
+            <h2 class="name" onclick="goToPage('mainPage')">EnergDOWN</h2>
 
             ${friendsListButton}
         </div>

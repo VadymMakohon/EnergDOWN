@@ -9,6 +9,8 @@ function updateViewEditProfile() {
             <input type="text" placeholder="Brukernavn:" required/>
             <input type="email" placeholder="E-post:" required/>
             <input type="password" placeholder="Passord" required/>
+            
+            
         </div>
         <div class="right">
             <input
