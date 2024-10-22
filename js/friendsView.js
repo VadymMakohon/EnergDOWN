@@ -1,5 +1,6 @@
 function updateViewFriendsList() {
     document.getElementById('app').innerHTML = /*HTML*/`
+    ${createNavigationHtml()}
     <link rel="stylesheet" href="style.css">
         <div class="friends-view">
             <nav class="top-nav">

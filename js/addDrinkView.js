@@ -1,5 +1,6 @@
 function updateViewAddDrink() {
     document.getElementById('app').innerHTML = /*HTML*/`
+    ${createNavigationHtml()}
     <div class="add-drink-view">
         <button id="backBtn" class="back-btn">Tilbake</button>
 

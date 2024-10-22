@@ -1,5 +1,6 @@
 function updateViewEditGoal() {
     document.getElementById('app').innerHTML = /*HTML*/`
+    ${createNavigationHtml()}
     <header>
             
             <h1>Dagens mål</h1>

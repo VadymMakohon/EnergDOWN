@@ -1,5 +1,6 @@
 function updateViewEditProfile() {
   document.getElementById('app').innerHTML = /*HTML*/ `
+  ${createNavigationHtml()}
     <div class="container-acdv">
         <div class="btn-div">
             <button class="back-btn" onClick="goToPage('userProfilePage')">Tilbake</button>

@@ -1,8 +1,6 @@
 function updateViewHistory() {
     document.getElementById('app').innerHTML = /*HTML*/`
-    <button onclick="goToPage('loggedInUserProfilePage')">Profil</button>
-    <button onclick="logOut()">Logg ut</button>
-    <button onclick="goToPage('mainPage')">Tilbake</button>
+    ${createNavigationHtml()}
     <header>
             
         <h1>Din historikk</h1>

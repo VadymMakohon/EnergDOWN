@@ -1,5 +1,6 @@
 function updateViewLoggedInUserProfile() {
     document.getElementById('app').innerHTML = /*HTML*/`
+    ${createNavigationHtml()}
         <div id="userProfile"> 
             <div class="userProfileSection" id="sectionUser">
                 <div id="username"><!-- getUsername !--></div>
