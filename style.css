@@ -128,8 +128,57 @@ button:hover {
   font-weight: 600;
 }
 
-/* add custom drink view styles */
+/* add drink view styles */
+.add-drink-view {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
 
+.back-btn,
+.custom-drink-btn,
+.confirm-btn {
+  padding: 10px;
+  background-color: #0f07e8;
+  border: none;
+  color: white;
+  width: 40%;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.back-btn:hover,
+.custom-drink-btn:hover,
+.confirm-btn:hover {
+  background-color: #4a8be7
+}
+
+.drink-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.drink-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f4f4f4;
+  color: black;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.drink-list li:hover {
+  background-color: #ddd;
+}
+
+.btn-div {
+  margin-top: -130px;
+}
+
+/* add custom drink view styles */
 .container-acdv {
   display: flex;
   margin: 1em;
@@ -140,8 +189,9 @@ button:hover {
 
 .back-btn {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 33px;
 }
+
 .btn-div {
   margin-top: -130px;
 }
