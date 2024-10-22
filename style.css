@@ -45,6 +45,31 @@ button:hover {
   background-color: #3498db;
   align-items: center;
 }
+
+/* Navigation styles */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 3em;
+  width: 90vw;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+.nav-buttons button {
+  width: 100%;
+}
+.name {
+  flex-grow: 1;
+  text-align: center;
+  /* margin-right: 5em; */
+}
 /* create user view styles */
 
 .container-cuv {
@@ -54,6 +79,7 @@ button:hover {
   gap: 6rem;
   align-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .left {
@@ -77,9 +103,13 @@ button:hover {
 .right img {
   margin-top: 20px;
 }
+.create-user-btn-container {
+  display: flex;
+  justify-content: center;
+}
 
 .create-user {
-  width: 80%;
+  width: 20%;
   margin-left: 30px;
 }
 

@@ -1,5 +1,6 @@
 function updateViewLogin() {
-    document.getElementById('app').innerHTML = /*HTML*/`
+  document.getElementById('app').innerHTML = /*HTML*/ `
+    ${createNavigationHtml()}
         <header>
             <h1>Velkommen</h1>
             

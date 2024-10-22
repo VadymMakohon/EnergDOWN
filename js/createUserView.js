@@ -1,5 +1,6 @@
 function updateViewCreateUser() {
   document.getElementById('app').innerHTML = /*HTML*/ `
+  ${createNavigationHtml()}
     <form id="createUserForm">
         <div class="container-cuv">
         <div class="left">
@@ -19,7 +20,10 @@ function updateViewCreateUser() {
             </label>
         </div>
         </div>
-        <button class="create-user">Opprett din bruker</button>
+        <div class="create-user-btn-container">
+          <button class="create-user">Opprett din bruker</button>
+
+        </div>
     </form>
     <script>
         
