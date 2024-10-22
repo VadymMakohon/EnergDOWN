@@ -110,8 +110,9 @@ button:hover {
 
 .back-btn {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 33px;
 }
+
 .btn-div {
   margin-top: -130px;
 }
