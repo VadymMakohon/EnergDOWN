@@ -40,6 +40,7 @@ button:hover {
   background-color: #3498db;
   align-items: center;
 }
+/* create user view styles */
 
 .container-cuv {
   display: flex;
@@ -85,6 +86,42 @@ button:hover {
   align-items: center;
   text-align: center;
   margin-bottom: 2.5em;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* add custom drink view styles */
+
+.container-acdv {
+  display: flex;
+  margin: 1em;
+  gap: 6rem;
+  align-content: center;
+  align-items: center;
+}
+
+.back-btn {
+  width: 100%;
+  border-radius: 6px;
+}
+.btn-div {
+  margin-top: -130px;
+}
+
+.add-drink-btn {
+  width: 20%;
+  margin-left: 190px;
+}
+
+.image-drink-text {
+  min-width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1em;
   cursor: pointer;
   font-weight: 600;
 }
