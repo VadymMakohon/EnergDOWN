@@ -24,10 +24,6 @@ const model = {
             error: '',
         },
 
-
-        landingPageWithFriendList: {
-        },
-
         loggedInUserProfile: {
             commentInput: '',
         },
@@ -93,7 +89,28 @@ const model = {
             email: 'test@testus.com',
             password: 'asdf',
             image: '',
-        }
+        },
+        {
+            id: 3,
+            username: 'Vadym',
+            email: 'vadym@testus.com',
+            password: '777',
+            image: '',
+        },
+        {
+            id: 4,
+            username: 'Egidijus',
+            email: 'egidijus@testus.com',
+            password: 'eg',
+            image: '',
+        },
+        {
+            id: 5,
+            username: 'Christopher',
+            email: 'christopher@testus.com',
+            password: 'klepp',
+            image: '',
+        },
     ],
 
     goals: [
@@ -138,9 +155,19 @@ const model = {
         { userId: 1, friendId: 2 },
         { userId: 1, friendId: 3 },
         { userId: 1, friendId: 4 },
-        { userId: 2, friendId: 1 },
+        { userId: 1, friendId: 5 },
         { userId: 2, friendId: 3 },
         { userId: 2, friendId: 4 },
+        { userId: 2, friendId: 5 },
+        { userId: 3, friendId: 2 },
+        { userId: 3, friendId: 4 },
+        { userId: 3, friendId: 5 },
+        { userId: 4, friendId: 2 },
+        { userId: 4, friendId: 3 },
+        { userId: 4, friendId: 5 },
+        { userId: 5, friendId: 2 },
+        { userId: 5, friendId: 3 },
+        { userId: 5, friendId: 4 },
     ],
 
     //Se om vi kan utvide dette inn i drinks
