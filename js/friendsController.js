@@ -1,5 +1,23 @@
 function allFriends() {
+    let userId = loggedInUserId();
     let friends = [];
-    for (let otherUser of model.users) {
+    for (let otherUser of model.friends) {
+        if (otherUser.userId == userId ) 
+            friends.push(idToUser(otherUser.friendId));
     }
+    return friends;
+}
+
+function loggedInUserId(){
+    for (let user of model.users) {
+        if (user.username == username) return user.id;
+    }
+    return -1;
+}
+
+function idToUser(id){
+  for (let user of model.users) {
+    if (user.id == id) return user;
+}
+return null;
 }
