@@ -70,6 +70,11 @@ button:hover {
   text-align: center;
   /* margin-right: 5em; */
 }
+
+.friends-button {
+  width: 10%;
+}
+
 /* create user view styles */
 
 .container-cuv {
@@ -152,7 +157,7 @@ button:hover {
 .back-btn:hover,
 .custom-drink-btn:hover,
 .confirm-btn:hover {
-  background-color: #4a8be7
+  background-color: #4a8be7;
 }
 
 .drink-list {
