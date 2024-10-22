@@ -4,7 +4,7 @@ function goToPage(pageName) {
 }
 
 function logOut() {
-    model.app.loggedInAsUserId = false;
+    model.app.loggedIn = false;
     model.inputs.loginPage.username = '';
     model.inputs.loginPage.password = '';
     goToPage('startPage');
