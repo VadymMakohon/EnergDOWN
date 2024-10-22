@@ -110,9 +110,10 @@ button:hover {
 .custom-drink-btn,
 .confirm-btn {
   padding: 10px;
-  background-color: #4a8be7;
+  background-color: #0f07e8;
   border: none;
   color: white;
+  width: 40%;
   cursor: pointer;
   font-size: 14px;
   margin: 10px 0;
@@ -121,7 +122,7 @@ button:hover {
 .back-btn:hover,
 .custom-drink-btn:hover,
 .confirm-btn:hover {
-  background-color: #0f07e8;
+  background-color: #4a8be7
 }
 
 .drink-list {
