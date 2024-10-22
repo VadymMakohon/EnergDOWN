@@ -79,6 +79,28 @@ button:hover {
   width: 10%;
 }
 
+/* login view styles */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4em;
+}
+
+.login-container input {
+  padding: 0.6em;
+  border-radius: 7px;
+  border: none;
+  width: 250px;
+}
+.login-button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 /* create user view styles */
 
 .container-cuv {

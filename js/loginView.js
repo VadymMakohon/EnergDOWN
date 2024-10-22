@@ -4,13 +4,13 @@ function updateViewLogin() {
         <header>
             <h1>Velkommen</h1>
             
-            <div>
+            <div class="login-container">
                 <input type = "text" placeholder="Brukernavn" oninput = "model.inputs.loginPage.username = this.value"/>
               
                 <input type = "password" placeholder="Passord" oninput = "model.inputs.loginPage.password = this.value"/>
             </div>
 
-            <button onclick="logIn()">Logg inn</button>
+            <button class="login-button" onclick="logIn()">Logg inn</button>
             <div style="color: red">${model.inputs.loginPage.error}</div>
         </header>
     `;
