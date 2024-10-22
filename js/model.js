@@ -93,7 +93,28 @@ const model = {
             email: 'test@testus.com',
             password: 'asdf',
             image: '',
-        }
+        },
+        {
+            id: 3,
+            username: 'Vadym',
+            email: 'vadym@testus.com',
+            password: '777',
+            image: '',
+        },
+        {
+            id: 4,
+            username: 'Egidijus',
+            email: 'egidijus@testus.com',
+            password: 'eg',
+            image: '',
+        },
+        {
+            id: 5,
+            username: 'Christopher',
+            email: 'christopher@testus.com',
+            password: 'klepp',
+            image: '',
+        },
     ],
 
     goals: [
