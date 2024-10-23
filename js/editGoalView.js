@@ -12,5 +12,6 @@ function updateViewEditGoal() {
 
            
         </header>
+        ${showFriendList()}
     `;
 }

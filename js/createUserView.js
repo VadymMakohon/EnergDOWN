@@ -28,6 +28,7 @@ function updateViewCreateUser() {
     <script>
         
     </script>
+    ${showFriendList()}
     `;
 }
 

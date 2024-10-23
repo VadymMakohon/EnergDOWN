@@ -25,6 +25,6 @@ function updateViewEditProfile() {
         </div>
         </div>
         <button class="add-drink-btn">Endre</button>
-    
+        ${showFriendList()}
     `;
 }

@@ -23,6 +23,7 @@ function updateViewAddCustomDrink() {
         </div>
         </div>
         <button class="add-drink-btn">Legg til</button>
+        ${showFriendList()}
     
     `;
 }

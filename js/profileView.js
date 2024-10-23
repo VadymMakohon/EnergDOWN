@@ -25,5 +25,6 @@ function updateViewUserProfile() {
                 <div id="comments"><!-- getUserProfileComments !--></div>
             </div>
         </div>
+        ${showFriendList()}
     `;
 }

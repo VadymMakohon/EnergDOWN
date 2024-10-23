@@ -32,5 +32,6 @@ function updateViewLoggedInUserProfile() {
                 <button id="addDrinkButton" onClick="goToPage('addDrinkPage')">Legg til drikke</button>
             </div>
         </div>
+        ${showFriendList()}
     `;
 }

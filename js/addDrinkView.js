@@ -17,5 +17,6 @@ function updateViewAddDrink() {
 
         <button id="confirmBtn" class="confirm-btn">Bekreft at du har drukket dette</button>
     </div>
+    ${showFriendList()}
     `;
 }
