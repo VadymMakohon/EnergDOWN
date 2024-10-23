@@ -21,6 +21,11 @@ p {
   text-align: center;
 }
 
+.friends-container{
+  margin-right: 20px;
+  width: 200px;
+}
+
 .button-container {
   display: flex;
   flex-direction: column;
