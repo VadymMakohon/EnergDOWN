@@ -21,8 +21,10 @@ p {
   text-align: center;
 }
 
-.friends-container{
-  margin-right: 20px;
+.friends-container {
+  position: absolute;
+  right: 20px;
+  top: 500px;
   width: 200px;
 }
 
