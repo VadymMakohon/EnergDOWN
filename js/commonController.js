@@ -32,3 +32,9 @@ function logOut() {
   model.inputs.loginPage.password = '';
   goToPage('startPage');
 }
+
+function bannerButtonCheck(){
+  if(model.app.loggedIn) return 'mainPage';
+  else return 'startPage';
+
+}
