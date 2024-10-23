@@ -2,7 +2,7 @@ const model = {
     // Del 1: 
     app: {
         currentPage: 'startPage',
-        // createUserPage, loginPage, mainPage, mainWithFriendsPage, loggedInUserProfilePage, userProfilePage, 
+        // createUserPage, loginPage, mainPage, loggedInUserProfilePage, userProfilePage, 
         //viewHistoryPage, addDrinkPage, addCustomDrinkPage, editGoalPage, editProfilePage, friendsListPage
         loggedIn: false,
         showFriends: false,
