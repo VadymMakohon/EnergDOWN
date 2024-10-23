@@ -3,10 +3,6 @@ function updateViewFriendsList() {
     ${createNavigationHtml()}
     <link rel="stylesheet" href="style.css">
         <div class="friends-view">
-            <nav class="top-nav">
-                <button id="homeBtn" class="nav-btn">Hjem</button>
-                <button id="logoutBtn" class="nav-btn">Logg ut</button>
-            </nav>
 
             <button id="backBtn" class="back-btn">Tilbake</button>
 
