@@ -15,5 +15,6 @@ function updateViewHistory() {
                 Placeholder for getMotivation(startDate, endDate);
             </div>
         </header>
+        ${showFriendList()}
     `;
 }

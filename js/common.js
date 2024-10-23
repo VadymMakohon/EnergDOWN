@@ -39,5 +39,5 @@ function showFriendList() {
 }
 function toggleFriendList() {
   model.app.showFriends = !model.app.showFriends;
-  updateViewMain();
+  updateView();
 }
