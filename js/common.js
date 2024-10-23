@@ -26,9 +26,7 @@ function showFriendList() {
       <div class="friends-container">
         <h3>Friends List</h3>
         <ul>
-          <li>Friend 1</li>
-          <li>Friend 2</li>
-          <li>Friend 3</li>
+          ${friendsListHTML()}
         </ul>
       </div>`;
   } else {
@@ -40,4 +38,17 @@ function showFriendList() {
 function toggleFriendList() {
   model.app.showFriends = !model.app.showFriends;
   updateView();
+}
+
+function friendsListHTML(){
+  let friendsHtml = ``;
+  let friends = allFriends();
+  if (friends.length > 0) {
+    for (const friend of friends) {
+      friendsHtml += `<li>${friend.username}</li>`;
+    }
+  } else {
+    friendsHtml = `<li>You don't have any friends</li>`;
+  }
+  return friendsHtml;
 }
