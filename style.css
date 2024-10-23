@@ -244,7 +244,7 @@ button:hover {
   cursor: pointer;
   font-weight: 600;
 }
-/* Responsive adjustments to smaller screens*/
+/* Responsive adjustments for smaller screens*/
 @media (max-width: 420px) {
   body {
     padding: 0 10px;
