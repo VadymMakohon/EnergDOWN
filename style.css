@@ -21,11 +21,20 @@ p {
   text-align: center;
 }
 
+/* friend list styles */
+
 .friends-container {
-  position: absolute;
-  right: 15px;
+  position: fixed;
+  right: 20px;
   top: 500px;
   width: 200px;
+  border: 1px solid black;
+  padding-left: 1em;
+}
+.friends-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .button-container {
@@ -284,26 +293,26 @@ button:hover {
 
   .container-cuv,
   .container-acdv {
-    flex-direction: column; 
-    gap: 2rem; 
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .create-user,
   .add-drink-btn {
-    width: 80%; 
-    margin-left: 0; 
+    width: 80%;
+    margin-left: 0;
   }
 
   .image-text,
   .image-drink-text {
     width: 100px;
-    height: 100px; 
+    height: 100px;
   }
 }
 
 @media (max-width: 380px) {
   body {
-    padding: 0 8px; 
+    padding: 0 8px;
   }
 
   h1 {
@@ -322,7 +331,7 @@ button:hover {
   }
 
   .navigation {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 5px;
   }
 
