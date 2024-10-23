@@ -11,3 +11,12 @@ function getProfilePicture(id) {
         return user.image;
     }
 }
+
+function getComments(id) {
+  let userProfileComments = [];
+  for (let comments of model.comments) {
+    if (comments.userId == id)
+        userProfileComments.push(comments.comment)
+  }
+  return userProfileComments;
+}
