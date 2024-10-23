@@ -8,6 +8,6 @@ function getUsername(id) {
 function getProfilePicture(id) {
     for (let user of model.users) {
       if (user.id == id)
-        return user.username;
+        return user.image;
     }
 }
