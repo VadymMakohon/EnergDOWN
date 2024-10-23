@@ -40,12 +40,12 @@ function toggleFriendList() {
   updateView();
 }
 
-function friendsListHTML(){
+function friendsListHTML() {
   let friendsHtml = ``;
   let friends = allFriends();
   if (friends.length > 0) {
     for (const friend of friends) {
-      friendsHtml += `<li>${friend.username}</li>`;
+      friendsHtml += `<li><a href="#">${friend.username}</a></li>`;
     }
   } else {
     friendsHtml = `<li>You don't have any friends</li>`;
