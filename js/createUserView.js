@@ -4,9 +4,9 @@ function updateViewCreateUser() {
     <form id="createUserForm">
         <div class="container-cuv">
         <div class="left">
-            <input type="text" placeholder="Brukernavn:" required/>
-            <input type="email" placeholder="E-post:" required/>
-            <input type="password" placeholder="Passord" required/>
+            <input type="text" placeholder="Brukernavn:" required oninput = "model.inputs.createAccountPage.username = this.value"/>
+            <input type="email" placeholder="E-post:" required oninput = "model.inputs.createAccountPage.email = this.value"/>
+            <input type="password" placeholder="Passord" required oninput = "model.inputs.createAccountPage.password = this.value"/>
         </div>
         <div class="right">
             <input
@@ -21,7 +21,7 @@ function updateViewCreateUser() {
         </div>
         </div>
         <div class="create-user-btn-container">
-          <button class="create-user">Opprett din bruker</button>
+          <button class="create-user" onclick = 'createUser()'>Opprett din bruker</button>
 
         </div>
     </form>
