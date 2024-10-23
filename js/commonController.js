@@ -14,7 +14,7 @@ function allFriends() {
 
 function loggedInUserId() {
   for (let user of model.users) {
-    if (user.username == username) return user.id;
+    if (user.username == model.inputs.loginPage.username) return user.id;
   }
   return -1;
 }
