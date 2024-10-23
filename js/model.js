@@ -5,6 +5,7 @@ const model = {
         // createUserPage, loginPage, mainPage, mainWithFriendsPage, loggedInUserProfilePage, userProfilePage, 
         //viewHistoryPage, addDrinkPage, addCustomDrinkPage, editGoalPage, editProfilePage, friendsListPage
         loggedIn: false,
+        showFriends: false,
     },
 
     // Del 2: Inputs
