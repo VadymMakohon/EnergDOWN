@@ -30,7 +30,15 @@ p {
   width: 200px;
   border: 1px solid black;
   padding-left: 1em;
+  border-radius: 5px;
 }
+.friends-container a {
+  text-decoration: none;
+}
+.friends-container h3 {
+  border-bottom: 1px solid black;
+}
+
 .friends-container ul {
   display: flex;
   flex-direction: column;
