@@ -10,6 +10,7 @@ function logIn() {
         model.inputs.loginPage.username = '';
         model.inputs.loginPage.password = '';
         updateView();
+        model.inputs.loginPage.error = '';
     }
 }
 

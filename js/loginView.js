@@ -11,7 +11,7 @@ function updateViewLogin() {
             </div>
             <button class="login-button" onclick="logIn()">Logg inn</button>
             </form>
-            <div style="color: red">${model.inputs.loginPage.error}</div>
+            <div style="color: black">${model.inputs.loginPage.error}</div>
         </header>
     `;
 }
