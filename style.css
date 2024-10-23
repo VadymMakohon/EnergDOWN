@@ -26,7 +26,7 @@ p {
 .friends-container {
   position: fixed;
   right: 20px;
-  top: 500px;
+  top: 450px;
   width: 200px;
   border: 1px solid black;
   padding-left: 1em;
@@ -44,6 +44,19 @@ p {
   flex-direction: column;
   gap: 2rem;
 }
+/* ------------- */
+
+/* edit goal view styles */
+.edit-goal-btn-container {
+  display: flex;
+  align-self: flex-start;
+}
+.edit-goal-btn-container button {
+  width: 9%;
+  /* border-radius: 6px; */
+}
+
+/* ------- */
 
 .button-container {
   display: flex;

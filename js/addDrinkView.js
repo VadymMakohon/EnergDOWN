@@ -1,8 +1,10 @@
 function updateViewAddDrink() {
   document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
+    <div class="edit-goal-btn-container">
+    <button class="back-btn" onClick="goToPage('loggedInUserProfilePage')">Tilbake</button>
+</div>
     <div class="add-drink-view">
-        <button id="backBtn" class="back-btn" onclick="goToPage('loggedInUserProfilePage')">Tilbake</button>
 
         <h3>Velg en drikke:</h3>
         <ul id="drinkList" class="drink-list">

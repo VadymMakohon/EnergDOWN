@@ -3,7 +3,7 @@ function updateViewEditProfile() {
   ${createNavigationHtml()}
     <div class="container-acdv">
         <div class="btn-div">
-            <button class="back-btn" onClick="goToPage('userProfilePage')">Tilbake</button>
+            <button class="back-btn" onClick="goToPage('loggedInUserProfilePage')">Tilbake</button>
         </div>
         <div class="left">
             <input type="text" placeholder="Brukernavn:" required/>
