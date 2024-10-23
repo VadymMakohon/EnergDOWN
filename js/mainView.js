@@ -1,5 +1,5 @@
 function updateViewMain() {
-    document.getElementById('app').innerHTML = /*HTML*/`
+  document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
     <header>
             
@@ -17,5 +17,6 @@ function updateViewMain() {
             <button onclick="goToPage('viewHistoryPage')">Vis historikk</button>
             <button onclick="goToPage('addDrinkPage')">Legg til drikke</button>
         </header>
+        ${showFriendList()}
     `;
 }
