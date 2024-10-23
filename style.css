@@ -244,3 +244,99 @@ button:hover {
   cursor: pointer;
   font-weight: 600;
 }
+/* Responsive adjustments to smaller screens*/
+@media (max-width: 420px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 90%;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  input {
+    width: 90%;
+    padding: 8px;
+  }
+
+  .navigation {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .friends-button {
+    width: 90%;
+  }
+
+  .container-cuv,
+  .container-acdv {
+    flex-direction: column; 
+    gap: 2rem; 
+  }
+
+  .create-user,
+  .add-drink-btn {
+    width: 80%; 
+    margin-left: 0; 
+  }
+
+  .image-text,
+  .image-drink-text {
+    width: 100px;
+    height: 100px; 
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    padding: 0 8px; 
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  input {
+    width: 100%;
+    padding: 7px;
+  }
+
+  .navigation {
+    flex-direction: column; 
+    gap: 5px;
+  }
+
+  .friends-button {
+    width: 100%;
+  }
+
+  .container-cuv,
+  .container-acdv {
+    gap: 1.5rem;
+  }
+
+  .create-user,
+  .add-drink-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .image-text,
+  .image-drink-text {
+    width: 90px;
+    height: 90px;
+  }
+}
