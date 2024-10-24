@@ -120,7 +120,42 @@ const model = {
             goal: 0,
             progression: 0,
             date: '',
-            userId: '',
+            userId: 0,
+        },
+        {
+            id: 0,
+            goal: 50,
+            progression: 0,
+            date: '',
+            userId: 1,
+        },
+        {
+            id: 0,
+            goal: 70,
+            progression: 0,
+            date: '',
+            userId: 2,
+        },
+        {
+            id: 0,
+            goal: 80,
+            progression: 0,
+            date: '',
+            userId: 3,
+        },
+        {
+            id: 0,
+            goal: 90,
+            progression: 0,
+            date: '',
+            userId: 4,
+        },
+        {
+            id: 0,
+            goal: 100,
+            progression: 0,
+            date: '',
+            userId: 5,
         }
     ],
 
