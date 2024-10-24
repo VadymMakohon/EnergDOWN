@@ -16,7 +16,6 @@ function getFavoriteDrinks(id) {
   let userProfileDrinks = [];
   for (let favoriteDrinks of model.favoriteDrinks) {
     if (favoriteDrinks.userId == id)
-      console.log(favoriteDrinks.drinkId);
       for (let drinks of model.drinks) {
         if (drinks.drinkId == favoriteDrinks.drinkId)
         userProfileDrinks.push(drinks.name);
