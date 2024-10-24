@@ -55,14 +55,14 @@ function friendsListHTML() {
 
 function goalsListHTML() {
   let goalsHtml = ``;
-  let goals = getGoal(); // Get the list of goals for the logged-in user
+  let goals = getGoal();
 
   if (goals.length > 0) {
     for (const goal of goals) {
       goalsHtml += `<li>Goal: ${goal.goal}</li>`;
     }
   } else {
-    goalsHtml = `<li>You don't have any goals set</li>`;
+    goalsHtml = `<li>You don't have any goals</li>`;
   }
   console.log(goals);
 
