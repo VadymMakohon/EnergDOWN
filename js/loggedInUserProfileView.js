@@ -3,7 +3,7 @@ function updateViewLoggedInUserProfile() {
     ${createNavigationHtml()}
         <div id="userProfile"> 
             <div class="userProfileSection" id="sectionUser">
-                <div id="username"><!-- getUsername !--></div>
+                <div id="username">${getLoggedInUsername()}</div>
                 <div id="profilePicture"><!-- getLoggedInProfilePicture !--></div>
                 <button id="editProfileButton" onClick="goToPage('editProfilePage')">Endre profil</button>
                 <button id="friendsListButton" onClick="goToPage('friendsListPage')">Venneliste</button>
