@@ -4,18 +4,20 @@ function updateViewMain() {
     <header>
             
             
-            <div>
+            <div class="goal-graph-main">
                 Placeholder for getGoalGraph();
+                <p>${goalsListHTML()}</p>
             </div>
-            <div>
+            <div class="summery-main">
                 Placeholder for getSummery();
             </div>
-            <div>
+            <div class="motivation-main">
                 Placeholder for getMotivation();
             </div>
-
-            <button onclick="goToPage('viewHistoryPage')">Vis historikk</button>
-            <button onclick="goToPage('addDrinkPage')">Legg til drikke</button>
+            <div class="buttons-main">
+                <button onclick="goToPage('viewHistoryPage')">Vis historikk</button>
+                <button onclick="goToPage('addDrinkPage')">Legg til drikke</button>
+            </div>
         </header>
         ${showFriendList()}
     `;

@@ -33,8 +33,20 @@ function logOut() {
   goToPage('startPage');
 }
 
-function bannerButtonCheck(){
-  if(model.app.loggedIn) return 'mainPage';
+function bannerButtonCheck() {
+  if (model.app.loggedIn) return 'mainPage';
   else return 'startPage';
+}
 
+function getGoal() {
+  let userId = loggedInUserId();
+  let goals = [];
+
+  for (let goal of model.goals) {
+    if (goal.userId == userId) {
+      goals.push(goal);
+    }
+  }
+
+  return goals;
 }
