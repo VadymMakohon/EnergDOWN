@@ -181,7 +181,8 @@ const model = {
     ],
 
     comments: [
-        { userId: 1, friendId: 2, comment: "" },
+        { userId: 1, friendId: 2, comment: "Kommentar 1" },
+        { userId: 1, friendId: 1, comment: "Kommentar 2" },
     ],
 
     /* Vi tenkte også at kanskje en kan ha en liste for hver bruker med venner, men vet ikke helt om det er riktig
