@@ -4,7 +4,7 @@ function updateViewLoggedInUserProfile() {
         <div id="userProfile"> 
             <div class="userProfileSection" id="sectionUser">
                 <div id="username"><!-- getUsername !--></div>
-                <div id="profilePicture"><!-- getProfilePicture !--></div>
+                <div id="profilePicture"><!-- getLoggedInProfilePicture !--></div>
                 <button id="editProfileButton" onClick="goToPage('editProfilePage')">Endre profil</button>
                 <button id="friendsListButton" onClick="goToPage('friendsListPage')">Venneliste</button>
             </div>
@@ -12,20 +12,20 @@ function updateViewLoggedInUserProfile() {
                 <div class="userProfileTitle" id="userProfileTitleGoal">
                 <h1>Dagens mål</h1>
                 </div>
-                <div id="dailyGoalProgression"><!-- getGoalProgression !--></div>
+                <div id="dailyGoalProgression"><!-- getLoggedInProgression !--></div>
                 <button id="editGoalButton" onClick="goToPage('editGoalPage')">Endre mål</button>
             </div>
             <div class="userProfileSection" id="userProfileSectionFavoriteDrinks">
                 <div class="userProfileTitle" id="userProfileTitleFavoriteDrinks">
                     <h1>Favoritter</h1>
                 </div>
-                <div id="favoriteDrinks"><!-- getFavoriteDrinks !--></div>
+                <div id="favoriteDrinks">${getLoggedInFavoriteDrinks()}</div>
             </div>
             <div class="userProfileSection" id="userProfileSectionComments">
                 <div class="userProfileTitle" id="userProfileTitleComments">
                     <h1>Kommentarer</h1>
                 </div>
-                <div id="comments"><!-- getUserProfileComments !--></div>
+                <div id="comments"><!-- getLoggedInProfileComments !--></div>
             </div>
             <div class="userProfileSection" id="userProfileSectionNavigation">
                 <button id="showHistoryButton" onClick="goToPage('viewHistoryPage')">Vis historikk</button>
