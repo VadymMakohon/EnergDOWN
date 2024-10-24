@@ -25,7 +25,7 @@ function updateViewLoggedInUserProfile() {
                 <div class="userProfileTitle" id="userProfileTitleComments">
                     <h1>Kommentarer</h1>
                 </div>
-                <div id="comments"><!-- getLoggedInProfileComments !--></div>
+                <div id="comments">${getLoggedInComments()}</div>
             </div>
             <div class="userProfileSection" id="userProfileSectionNavigation">
                 <button id="showHistoryButton" onClick="goToPage('viewHistoryPage')">Vis historikk</button>
