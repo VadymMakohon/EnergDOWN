@@ -12,11 +12,23 @@ function getProfilePicture(id) {
     }
 }
 
+function getFavoriteDrinks(id) {
+  let userProfileDrinks = [];
+  for (let favoriteDrinks of model.favoriteDrinks) {
+    if (favoriteDrinks.userId == id)
+      for (let drinks of model.drinks) {
+        if (drinks.drinkId == favoriteDrinks.drinkId)
+        userProfileDrinks.push(drinks.name);
+      }
+  }
+  return userProfileDrinks;
+}
+
 function getComments(id) {
   let userProfileComments = [];
   for (let comments of model.comments) {
     if (comments.userId == id)
-        userProfileComments.push(comments.comment)
+        userProfileComments.push(comments.comment);
   }
   return userProfileComments;
 }

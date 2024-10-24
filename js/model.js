@@ -150,6 +150,7 @@ const model = {
 
     favoriteDrinks: [
         { userId: 1, drinkId: 1 },
+        { userId: 1, drinkId: 2 },
     ],
 
     friends: [
