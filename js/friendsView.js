@@ -2,20 +2,23 @@ function updateViewFriendsList() {
   document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
     <link rel="stylesheet" href="style.css">
-        <div class="friends-view">
-
-            <button id="backBtn" class="back-btn" onclick="goToPage('loggedInUserProfilePage')">Tilbake</button>
-
-            <div class="search-container">
-                <input type="text" id="searchInput" class="search-box" placeholder="Søk venner..." oninput="searchFriends()">
-            </div>
-
+        <div class="friends-view" id="friends-view">
+        
+        <div class="friend-view-left">
+            <button id="backBtn" class="back-btn-friends" onclick="goToPage('loggedInUserProfilePage')">Tilbake</button>
+        </div>
+        
+        <div class="friend-view-middle">
             <ul id="friendsList" class="friends-list">
-                <li class="friend">Vadym</li>
-                <li class="friend">Christopher</li>
-                <li class="friend">Egidijus</li>
-                <li class="friend">Thomas</li>
-            </ul>
+            ${friendsListHTML()}
+           
+        </ul>
+        
+        </div>
+            <div class="search-container friend-view-right">
+            <input type="text" id="searchInput" class="search-box" placeholder="Søk venner..." oninput="searchFriends()">
+            </div>
+       
         </div>
     `;
 

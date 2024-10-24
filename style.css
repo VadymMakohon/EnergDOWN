@@ -281,6 +281,36 @@ button:hover {
   cursor: pointer;
   font-weight: 600;
 }
+
+/* Friend List view styles */
+
+#friends-view .back-btn-friends {
+  width: 100%;
+}
+
+#friends-view {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+#friends-view .search-box {
+  padding: 0.6em;
+  border-radius: 7px;
+  border: none;
+  width: 200px;
+}
+
+#friends-view ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: black;
+}
+
+#friends-view li:hover {
+  transform: scale(1.1);
+}
+
 /* Responsive adjustments for smaller screens*/
 @media (max-width: 420px) {
   body {
