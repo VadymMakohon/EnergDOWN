@@ -11,3 +11,13 @@ function getLoggedInFavoriteDrinks() {
     return userProfileDrinks;
 }
 
+function getLoggedInComments() {
+    let userId = loggedInUserId();
+    let userProfileComments = [];
+    for (let comments of model.comments) {
+      if (comments.userId == userId)
+          userProfileComments.push(comments.comment);
+    }
+    return userProfileComments;
+  }
+
