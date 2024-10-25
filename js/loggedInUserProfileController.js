@@ -6,6 +6,14 @@ function getLoggedInUsername() {
     }
 }
 
+function getLoggedInProfilePicture() {
+  let userId = loggedInUserId();
+  for (let user of model.users) {
+    if (user.id == userId)
+      return user.image;
+  }
+}
+
 function getLoggedInFavoriteDrinks() {
     let userId = loggedInUserId();
     let userProfileDrinks = [];
