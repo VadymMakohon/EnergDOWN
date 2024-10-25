@@ -12,7 +12,7 @@ function updateViewLoggedInUserProfile() {
                 <div class="userProfileTitle" id="userProfileTitleGoal">
                 <h1>Dagens mål</h1>
                 </div>
-                <div id="dailyGoalProgression"><!-- getLoggedInProgression !--></div>
+                <div id="dailyGoalProgression">${goalsListHTML()}</div>
                 <button id="editGoalButton" onClick="goToPage('editGoalPage')">Endre mål</button>
             </div>
             <div class="userProfileSection" id="userProfileSectionFavoriteDrinks">
