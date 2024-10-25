@@ -82,7 +82,7 @@ const model = {
             username: 'admin',
             email: 'admin@getacademy.no',
             password: '1234',
-            image: '',
+            image: 'img/redbull.png',
         },
         {
             id: 2,
@@ -124,8 +124,8 @@ const model = {
         },
         {
             id: 0,
-            goal: 50,
-            progression: 0,
+            goal: 100,
+            progression: 25,
             date: '',
             userId: 1,
         },
