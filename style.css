@@ -357,6 +357,12 @@ button:hover {
   transform: scale(1.1);
 }
 
+/* Logged in user profile view styles */
+
+.loggedInProfilePicture {
+  height: 10rem;
+}
+
 /* Responsive adjustments for smaller screens*/
 @media (max-width: 420px) {
   body {
