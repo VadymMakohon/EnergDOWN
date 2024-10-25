@@ -53,10 +53,56 @@ p {
 }
 .edit-goal-btn-container button {
   width: 9%;
-  /* border-radius: 6px; */
 }
 
 /* ------- */
+
+/* --- Main view styles --- */
+.main-view {
+  display: grid;
+  height: 60vh;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'goal goal summery summery'
+    'goal goal summery summery'
+    'goal goal motivation motivation'
+    'goal goal motivation motivation'
+    'buttons buttons buttons buttons'
+    'buttons buttons buttons buttons';
+}
+
+.main-view .goal-graph-main {
+  grid-area: goal;
+  border: 1px solid black;
+  justify-content: center;
+  align-content: center;
+}
+.main-view .summery-main {
+  grid-area: summery;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+}
+.main-view .motivation-main {
+  grid-area: motivation;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+}
+
+.main-view .buttons-main {
+  grid-area: buttons;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+}
+.main-view .buttons-main div {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+/* --- Main view Stryle --- END --- */
 
 .button-container {
   display: flex;

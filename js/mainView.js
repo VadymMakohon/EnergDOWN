@@ -1,24 +1,25 @@
 function updateViewMain() {
   document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
-    <header>
-            
+    <section class="main-view">   
             
             <div class="goal-graph-main">
-                Placeholder for getGoalGraph();
-                <p>${goalsListHTML()}</p>
+                <div>${goalsListHTML()}</div>
             </div>
             <div class="summery-main">
-                Placeholder for getSummery();
+                <p>Placeholder for getSummery()</p>
             </div>
             <div class="motivation-main">
-                Placeholder for getMotivation();
+                <p>Placeholder for getMotivation()</p>
             </div>
             <div class="buttons-main">
-                <button onclick="goToPage('viewHistoryPage')">Vis historikk</button>
-                <button onclick="goToPage('addDrinkPage')">Legg til drikke</button>
+                <div>
+                    <button onclick="goToPage('viewHistoryPage')">Vis historikk</button>
+                    <button onclick="goToPage('addDrinkPage')">Legg til drikke</button>
+
+                </div>
             </div>
-        </header>
+        </section>
         ${showFriendList()}
     `;
 }
