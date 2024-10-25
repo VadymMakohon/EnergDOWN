@@ -4,7 +4,7 @@ function updateViewLoggedInUserProfile() {
         <div id="userProfile"> 
             <div class="userProfileSection" id="sectionUser">
                 <div id="username">${getLoggedInUsername()}</div>
-                <div id="profilePicture"><!-- getLoggedInProfilePicture !--></div>
+                <div id="profilePicture"><img src="${getLoggedInProfilePicture()}" class="loggedInProfilePicture"></div>
                 <button id="editProfileButton" onClick="goToPage('editProfilePage')">Endre profil</button>
                 <button id="friendsListButton" onClick="goToPage('friendsListPage')">Venneliste</button>
             </div>
