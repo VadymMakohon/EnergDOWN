@@ -58,6 +58,17 @@ function getGoal() {
   return goals;
 }
 
+function getGoalText() {
+  let userId = loggedInUserId();
+  let goalText = "";
+  for (let goal of model.goals) {
+    if (goal.userId == userId) {
+      goalText = goal.goal;
+    }
+  }
+  return goalText;
+}
+
 function getRandomQuote() {
   let quotes = model.quotes;
   let randomNum = Math.floor(Math.random() * quotes.length);
