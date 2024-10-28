@@ -6,9 +6,9 @@ function updateViewEditProfile() {
             <button class="back-btn" onClick="goToPage('loggedInUserProfilePage')">Tilbake</button>
         </div>
         <div class="left">
-            <input type="text" placeholder="Brukernavn:" required/>
-            <input type="email" placeholder="E-post:" required/>
-            <input type="password" placeholder="Passord" required/>
+            <input type="text" placeholder="Brukernavn:" required oninput = "model.inputs.editProfilePage.username = this.value"/>
+            <input type="email" placeholder="E-post:" required oninput = "model.inputs.editProfilePage.email = this.value"/>
+            <input type="password" placeholder="Passord" required oninput = "model.inputs.editProfilePage.password = this.value"/>
             
             
         </div>
@@ -24,7 +24,7 @@ function updateViewEditProfile() {
             </label>
         </div>
         </div>
-        <button class="add-drink-btn">Endre</button>
+        <button class="add-drink-btn" onclick = 'editUser()'>Endre</button>
         ${showFriendList()}
     `;
 }
