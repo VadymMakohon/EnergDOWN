@@ -69,6 +69,21 @@ function getGoalText() {
   return goalText;
 }
 
+function getGoalGraph() {
+  let userId = loggedInUserId();
+  let goalGraph = ``;
+  for (let goal of model.goals) {
+    if (goal.userId == userId) {
+      goalGraph = /*HTML*/`
+        <svg viewBox="0 0 32 32">
+        <circle class='first' stroke-dasharray="${goal.progression} ${goal.goal}"></circle>
+        </svg>
+      `;
+    }
+  }
+  return goalGraph;
+}
+
 function getRandomQuote() {
   let quotes = model.quotes;
   let randomNum = Math.floor(Math.random() * quotes.length);
