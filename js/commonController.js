@@ -76,7 +76,7 @@ function getGoalGraph() {
     if (goal.userId == userId) {
       goalGraph = /*HTML*/`
         <svg viewBox="0 0 32 32">
-        <circle class='first' stroke-dasharray="${goal.progression} ${goal.goal}"></circle>
+        <circle class='first' stroke-dasharray="${(goal.progression/goal.goal)*100} 100"></circle>
         </svg>
       `;
     }
