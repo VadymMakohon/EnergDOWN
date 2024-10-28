@@ -204,6 +204,69 @@ const model = {
     { userId: 5, friendId: 4 },
   ],
 
+  quotes: [
+    {
+      quoteId: 0,
+      quote: 'For mye koffein kan gi deg hjertebank, ta det med ro!',
+    },
+    {
+      quoteId: 1,
+      quote: 'En kopp mindre i dag kan gi deg bedre søvn i natt.',
+    },
+    {
+      quoteId: 2,
+      quote: 'Reduser koffeininntaket og få mer naturlig energi.',
+    },
+    {
+      quoteId: 3,
+      quote: 'Tenk på helsen din, drikk vann i stedet for energidrikker.',
+    },
+    {
+      quoteId: 4,
+      quote: 'Mindre koffein kan føre til færre stressfølelser.',
+    },
+    {
+      quoteId: 5,
+      quote: 'Bytt ut brus med vann for en sunnere hverdag.',
+    },
+    {
+      quoteId: 6,
+      quote: 'Redusert koffein kan gi deg en mer stabil energi gjennom dagen.',
+    },
+    {
+      quoteId: 7,
+      quote: 'Mindre koffein gir deg bedre fokus og konsentrasjon.',
+    },
+    {
+      quoteId: 8,
+      quote: 'Ta vare på hjertet ditt, kutt ned på koffeinen.',
+    },
+    {
+      quoteId: 9,
+      quote: 'En kopp mindre kaffe kan gi deg en bedre dag.',
+    },
+    {
+      quoteId: 10,
+      quote: 'Følg hjertet ditt, velg færre koffeinholdige drikker.',
+    },
+    {
+      quoteId: 11,
+      quote: 'Redusert koffein kan hjelpe deg med å føle deg roligere.',
+    },
+    {
+      quoteId: 12,
+      quote: 'Koffeinkutt kan føre til færre hodepiner.',
+    },
+    {
+      quoteId: 13,
+      quote: 'Velg vann over koffein for en bedre balanse i livet.',
+    },
+    {
+      quoteId: 14,
+      quote: 'Mindre koffein, mer naturlig energi og bedre helse.',
+    },
+  ],
+
   //Se om vi kan utvide dette inn i drinks
   selectedDrinks: [
     { userId: 1, drinkId: 1, isCustom: false },

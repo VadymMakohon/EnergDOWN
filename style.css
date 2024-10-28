@@ -24,13 +24,15 @@ p {
 /* friend list styles */
 
 .friends-container {
-  position: fixed;
+  position: absolute;
   right: 20px;
-  top: 445px;
-  width: 200px;
+  top: 350px;
+  width: 250px;
   border: 1px solid black;
   padding-left: 1em;
   border-radius: 5px;
+  z-index: 999;
+  background: #36628d;
 }
 .friends-container a {
   text-decoration: none;
@@ -138,6 +140,7 @@ button:hover {
   border-bottom: 1px solid black;
   margin-bottom: 3em;
   width: 90vw;
+  position: relative;
 }
 
 .nav-buttons {

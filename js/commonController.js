@@ -26,9 +26,9 @@ function idToUser(id) {
   return null;
 }
 
-function findIndexOfUserId(x){
-  for(let i = 0; i <= model.users.length; i++){
-      if(model.users[i].id == x) return i;
+function findIndexOfUserId(x) {
+  for (let i = 0; i <= model.users.length; i++) {
+    if (model.users[i].id == x) return i;
   }
   return -1;
 }
@@ -56,4 +56,11 @@ function getGoal() {
   }
 
   return goals;
+}
+
+function getRandomQuote() {
+  let quotes = model.quotes;
+  let randomNum = Math.floor(Math.random() * quotes.length);
+
+  return `<p>${quotes[randomNum].quote}</p>`;
 }

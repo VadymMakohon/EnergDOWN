@@ -10,7 +10,7 @@ function updateViewMain() {
                 <p>Placeholder for getSummery()</p>
             </div>
             <div class="motivation-main">
-                <p>Placeholder for getMotivation()</p>
+                <p>${getRandomQuote()}</p>
             </div>
             <div class="buttons-main">
                 <div>
