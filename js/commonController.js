@@ -26,6 +26,13 @@ function idToUser(id) {
   return null;
 }
 
+function findIndexOfUserId(x){
+  for(let i = 0; i <= model.users.length; i++){
+      if(model.users(i).id == x) return i;
+  }
+  return -1;
+}
+
 function logOut() {
   model.app.loggedIn = false;
   model.inputs.loginPage.username = '';
