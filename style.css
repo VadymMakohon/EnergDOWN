@@ -465,6 +465,7 @@ button:hover {
   }
 }
 
+/* Dette er brukt for getGoalGraph()*/
 svg {
   width: 200px;
   border-radius: 50%;
