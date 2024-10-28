@@ -8,11 +8,7 @@ function updateViewAddDrink() {
 
         <h3>Velg en drikke:</h3>
         <ul id="drinkList" class="drink-list">
-            <li>Kaffe</li>
-            <li>Redbull</li>
-            <li>Battery</li>
-            <li>Monster</li>
-            <li>Energishot</li>
+           ${goalsDrinksHTML()}
         </ul>
 
         <button id="customDrinkBtn" class="custom-drink-btn" onclick="goToPage('addCustomDrinkPage')">Lag egendefinert drikke</button>

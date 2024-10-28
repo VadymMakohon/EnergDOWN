@@ -361,6 +361,7 @@ button:hover {
 
 .loggedInProfilePicture {
   height: 10rem;
+  border-radius: 50%;
 }
 
 /* Responsive adjustments for smaller screens*/
