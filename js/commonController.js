@@ -58,6 +58,32 @@ function getGoal() {
   return goals;
 }
 
+function getGoalText() {
+  let userId = loggedInUserId();
+  let goalText = "";
+  for (let goal of model.goals) {
+    if (goal.userId == userId) {
+      goalText = goal.goal;
+    }
+  }
+  return goalText;
+}
+
+function getGoalGraph() {
+  let userId = loggedInUserId();
+  let goalGraph = ``;
+  for (let goal of model.goals) {
+    if (goal.userId == userId) {
+      goalGraph = /*HTML*/`
+        <svg viewBox="0 0 32 32">
+        <circle class='first' stroke-dasharray="${(goal.progression/goal.goal)*100} 100"></circle>
+        </svg>
+      `;
+    }
+  }
+  return goalGraph;
+}
+
 function getRandomQuote() {
   let quotes = model.quotes;
   let randomNum = Math.floor(Math.random() * quotes.length);

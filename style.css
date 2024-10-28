@@ -529,3 +529,24 @@ button:hover {
     height: 90px;
   }
 }
+
+/* Dette er brukt for getGoalGraph()*/
+svg {
+  width: 200px;
+  border-radius: 50%;
+  background: white; 
+  transform: rotate(-90deg);
+}
+ 
+circle {
+  fill: none;
+  stroke-width: 32;
+  r: 16;
+  cx: 16;
+  cy: 16;
+}
+ 
+circle.first {
+  stroke: blue;
+ 
+}
