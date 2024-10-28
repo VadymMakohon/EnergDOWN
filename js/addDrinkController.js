@@ -7,7 +7,7 @@ function getDrinks() {
   return drinks;
 }
 
-function goalsDrinksHTML() {
+function drinksHTML() {
   let drinksHtml = ``;
   let drinks = getDrinks();
 

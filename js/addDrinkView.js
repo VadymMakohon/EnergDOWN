@@ -8,7 +8,7 @@ function updateViewAddDrink() {
 
         <h3>Velg en drikke:</h3>
         <ul id="drinkList" class="drink-list">
-           ${goalsDrinksHTML()}
+           ${drinksHTML()}
         </ul>
 
         <button id="customDrinkBtn" class="custom-drink-btn" onclick="goToPage('addCustomDrinkPage')">Lag egendefinert drikke</button>
