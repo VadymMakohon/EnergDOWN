@@ -28,7 +28,7 @@ function idToUser(id) {
 
 function findIndexOfUserId(x){
   for(let i = 0; i <= model.users.length; i++){
-      if(model.users(i).id == x) return i;
+      if(model.users[i].id == x) return i;
   }
   return -1;
 }
