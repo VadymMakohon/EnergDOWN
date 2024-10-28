@@ -105,7 +105,72 @@ p {
   align-content: center;
 }
 /* --- Main view Stryle --- END --- */
+#userProfile {
+  display: grid;
+  height: 60vh;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'topL topL topR topR'
+    'topL topL topR topR'
+    'topL topL topR topR'
+    'topL topL topR topR'
+    'bottomL bottomL bottomR bottomR'
+    'bottomL bottomL bottomR bottomR'
+    'bottomL bottomL bottomR bottomR'
+    'bottomL bottomL bottomR bottomR';
+}
 
+#userProfile .top-left {
+  grid-area: topL;
+  border: 1px solid black;
+  justify-content: center;
+  align-content: center;
+}
+#userProfile .top-right {
+  grid-area: topR;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#userProfile .bottom-left {
+  grid-area: bottomL;
+  border: 1px solid black;
+}
+#userProfile .bottom-right {
+  grid-area: bottomR;
+  border: 1px solid black;
+}
+
+#userProfile .profilePicture {
+  display: flex;
+  justify-content: center;
+}
+#userProfile .user-profile-btns {
+  display: flex;
+  justify-content: space-between;
+}
+#editGoalButton {
+  justify-self: end;
+  align-self: end;
+}
+.bottom-right-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#userProfileSectionNavigation {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  /* width: 100%; */
+}
+#userProfileSectionNavigation button {
+  width: 100%;
+}
+
+/* --- Logged in user profile view styles --- */
 .button-container {
   display: flex;
   flex-direction: column;

@@ -14,6 +14,7 @@ function updateViewCreateUser() {
             id="fileInput"
             accept="image/*"
             style="display: none"
+            oninput = "model.inputs.createAccountPage.image = this.value"
             />
             <label for="fileInput" class="image-label">
             <span class="image-text">Egendefinert bilde</span>
