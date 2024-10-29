@@ -1,30 +1,40 @@
 function updateViewUserProfile() {
+    let id = model.inputs.userProfilePage.profileId; 
     document.getElementById('app').innerHTML = /*HTML*/`
     ${createNavigationHtml()}
-        <div id="userProfile"> 
-            <div class="userProfileSection" id="sectionUser">
-                <div id="username"><!-- getUsername !--></div>
-                <div id="profilePicture"><!-- getProfilePicture !--></div>
-            </div>
-            <div class="userProfileSection" id="userProfileSectionGoal">
-                <div class="userProfileTitle" id="userProfileTitleGoal">
-                <h1>Dagens mål</h1>
-                </div>
-                <div id="dailyGoalProgression"><!-- getGoalProgression !--></div>
-            </div>
-            <div class="userProfileSection" id="userProfileSectionFavoriteDrinks">
-                <div class="userProfileTitle" id="userProfileTitleFavoriteDrinks">
-                    <h1>Favoritter</h1>
-                </div>
-                <div id="favoriteDrinks"><!-- getFavoriteDrinks !--></div>
-            </div>
-            <div class="userProfileSection" id="userProfileSectionComments">
-                <div class="userProfileTitle" id="userProfileTitleComments">
-                    <h1>Kommentarer</h1>
-                </div>
-                <div id="comments"><!-- getUserProfileComments !--></div>
-            </div>
+    <div id="userProfile"> 
+    <div class="top-left" id="sectionUser">
+        <h1>${getUsername(id)}</h1>
+        <div class="profilePicture"><img src="${getProfilePicture(id)}" class="loggedInProfilePicture"></div>
+        <div class="user-profile-btns">
         </div>
+    </div>
+    <div class="top-right" id="userProfileSectionGoal">
+        <div class="userProfileTitle" id="userProfileTitleGoal">
+        <h1>Dagens mål</h1>
+        </div>
+        <div id="dailyGoalProgression">${getProfileGoalsListHTML(id)}</div>
+        <div class="graph">${getProfileGoalGraph(id)}</div>
+    </div>
+    <div class="bottom-left" id="userProfileSectionFavoriteDrinks">
+        <div class="userProfileTitle" id="userProfileTitleFavoriteDrinks">
+            <h1>Favoritter</h1>
+        </div>
+        <div id="favoriteDrinks">${getFavoriteDrinks(id)}</div>
+    </div>
+    <div class="bottom-right" id="userProfileSectionComments">
+        <div class="userProfileTitle" id="userProfileTitleComments">
+            <h1>Kommentarer</h1>
+        </div>
+        <div class="bottom-right-container">
+            <div class="comments-container">
+                <ul id="comments"><li>${getComments(id)}</li></ul>
+            </div>
+                <div class="userProfileSection" id="userProfileSectionNavigation">
+                </div>
+            </div>
+    </div>
+</div>
         ${showFriendList()}
     `;
 }
