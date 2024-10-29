@@ -152,6 +152,7 @@ p {
 #userProfile .bottom-left {
   grid-area: bottomL;
   border: 1px solid black;
+  padding: 1rem;
 }
 #userProfile .bottom-right {
   grid-area: bottomR;
@@ -188,6 +189,9 @@ p {
   width: 100%;
 }
 #userProfile .top-right h1 {
+  margin: 0;
+}
+#userProfile .top-right p {
   margin: 0;
 }
 
