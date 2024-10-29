@@ -59,10 +59,10 @@ function goalsListHTML() {
 
   if (goals.length > 0) {
     for (const goal of goals) {
-      goalsHtml += `<p>Goal: ${goal.progression}mg / ${goal.goal}mg</p>`;
+      goalsHtml += `<p>Goal: ${goal.goal}mg / ${goal.progression}mg</p>`;
     }
   } else {
-    goalsHtml = `<li>You don't have any goals</li>`;
+    goalsHtml = `<p>You don't have any goals</p>`;
   }
   console.log(goals);
 

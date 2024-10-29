@@ -5,7 +5,7 @@ function updateViewMain() {
             
             <div class="goal-graph-main">
                 <div>${goalsListHTML()}</div>
-                <div>${getGoalGraph()}</div>
+                <div class="graph">${getGoalGraph()}</div>
             </div>
             <div class="summery-main">
                 <p>Placeholder for getSummery()</p>

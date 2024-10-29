@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -104,10 +107,15 @@ p {
   justify-content: space-around;
   align-content: center;
 }
+
+.graph {
+  display: flex;
+  justify-content: center;
+}
 /* --- Main view Stryle --- END --- */
 #userProfile {
   display: grid;
-  height: 60vh;
+  height: 70vh;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
@@ -125,7 +133,12 @@ p {
   grid-area: topL;
   border: 1px solid black;
   justify-content: center;
-  align-content: center;
+  /* align-content: center; */
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0.5rem;
+  overflow: hidden;
+  max-height: 100%;
 }
 #userProfile .top-right {
   grid-area: topR;
@@ -133,6 +146,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1rem;
+  max-height: 100%;
 }
 #userProfile .bottom-left {
   grid-area: bottomL;
@@ -141,6 +156,7 @@ p {
 #userProfile .bottom-right {
   grid-area: bottomR;
   border: 1px solid black;
+  padding: 1rem;
 }
 
 #userProfile .profilePicture {
@@ -150,6 +166,8 @@ p {
 #userProfile .user-profile-btns {
   display: flex;
   justify-content: space-between;
+  align-content: end;
+  align-items: end;
 }
 #editGoalButton {
   justify-self: end;
@@ -168,6 +186,9 @@ p {
 }
 #userProfileSectionNavigation button {
   width: 100%;
+}
+#userProfile .top-right h1 {
+  margin: 0;
 }
 
 /* --- Logged in user profile view styles --- */
@@ -530,23 +551,22 @@ button:hover {
   }
 }
 
-/* Dette er brukt for getGoalGraph()*/
+/*---- Dette er brukt for getGoalGraph() ----*/
 svg {
-  width: 200px;
+  max-width: 200px;
   border-radius: 50%;
-  background: white; 
+  background: white;
   transform: rotate(-90deg);
 }
- 
+
 circle {
-  fill: none;
+  fill: rgb(190, 190, 190);
   stroke-width: 32;
   r: 16;
   cx: 16;
   cy: 16;
 }
- 
+
 circle.first {
   stroke: blue;
- 
 }
