@@ -17,10 +17,6 @@ function updateViewFriendsList() {
                 <button onclick="addFriend(document.getElementById('newFriendName').value)">Add Friend</button>
             </div>
         </div>
-        
-        <div class="search-container friend-view-right">
-            <input type="text" id="searchInput" class="search-box" placeholder="Søk venner..." oninput="searchFriends()">
-        </div>
     </div>
   `;
 
