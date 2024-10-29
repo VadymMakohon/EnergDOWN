@@ -30,6 +30,7 @@ The EnergDOWN app is an online tool designed to help you and your friends keep t
 ## Technologies Used
 
 - HTML5 / CSS3
+- MVC: Model, View, Controller
 - JavaScript
 
 ## License
