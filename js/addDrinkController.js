@@ -13,10 +13,37 @@ function drinksHTML() {
 
   if (drinks.length > 0) {
     for (const drink of drinks) {
-      drinksHtml += `<li>${drink.name} ${drink.caffeineContent} mg</li>`;
+      let idOfSelectedDrink = drink.drinkId;
+      drinksHtml += `<li button onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg</li>`;
     }
   }
   console.log(drinks);
-
   return drinksHtml;
+}
+
+function selectDrink(selectedDrinkId) {
+  let drinks = getDrinks();
+  for (const drink of drinks) {
+    if (drink.drinkId == selectedDrinkId) {
+      drink.selected = !drink.selected;
+    }
+  }
+}
+
+function addSelectedToGoalProgression() {
+  let addToProgression = 0;
+  let drinks = getDrinks();
+  let id = loggedInUserId();
+  if (drinks.length > 0) {
+    for (const drink of drinks) {
+      if (drink.selected) {
+        addToProgression += drink.caffeineContent;
+        drink.selected = false;
+      }
+    }
+  }
+  if (loggedInUserId() > -1) {
+    let index = findIndexOfUserId(id);
+    model.goals[index].progression += addToProgression;
+  }
 }

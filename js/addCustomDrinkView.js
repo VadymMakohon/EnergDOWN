@@ -8,7 +8,7 @@ function updateViewAddCustomDrink() {
     <div class="left">
     
         <input type="text" placeholder="Navn:" required oninput = "model.inputs.addCustomDrinkPage.customDrinkName = this.value"/>
-        <input type="number" placeholder="Koffeininnhold i mg:" required oninput = "model.inputs.addCustomDrinkPage.coffeineContent = this.value"/>
+        <input type="number" placeholder="Koffeininnhold i mg:" required oninput = "model.inputs.addCustomDrinkPage.customCaffeineContent = parseInt(this.value)"/>
         
         </div>
         <div class="right">

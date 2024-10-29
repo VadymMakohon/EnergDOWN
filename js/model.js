@@ -28,12 +28,13 @@ const model = {
     },
 
     userProfilePage: {
+      profileId: 0,
       commentInput: '',
       addFriend: 0,
     },
 
     addDrinkPage: {
-      selectedDrink: 0,
+      selected: [],
     },
 
     editGoalPage: {
@@ -58,9 +59,10 @@ const model = {
 
     addCustomDrinkPage: {
       customDrinkName: '',
-      coffeineContent: '',
+      customCaffeineContent: 0,
       customDrinkImage: '',
       customDrinkId: 0,
+      selected: false,
     },
   },
 
@@ -106,7 +108,7 @@ const model = {
       id: 5,
       username: 'Christopher',
       email: 'christopher@testus.com',
-      password: 'klepp',
+      password: '1',
       image: '',
     },
   ],
@@ -163,6 +165,7 @@ const model = {
       name: 'Battery',
       caffeineContent: 50,
       image: 'battery.png',
+      selected: false,
     },
     {
       userId: null,
@@ -170,6 +173,7 @@ const model = {
       name: 'Kaffe',
       caffeineContent: 50,
       image: 'kaffe.png',
+      selected: false,
     },
     {
       userId: null,
@@ -177,6 +181,7 @@ const model = {
       name: 'Redbull',
       caffeineContent: 50,
       image: 'redbull.png',
+      selected: false,
     },
   ],
 
