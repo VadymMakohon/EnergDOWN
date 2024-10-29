@@ -12,6 +12,12 @@ function allFriends() {
   return friends;
 }
 
+function goToFriendProfile(friendId){
+model.inputs.userProfilePage.profileId = friendId;
+goToPage('userProfilePage');
+
+}
+
 function loggedInUserId() {
   for (let user of model.users) {
     if (user.username == model.inputs.loginPage.username) return user.id;

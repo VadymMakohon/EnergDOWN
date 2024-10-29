@@ -28,6 +28,7 @@ const model = {
     },
 
     userProfilePage: {
+      profileId: 0,
       commentInput: '',
       addFriend: 0,
     },
