@@ -42,9 +42,11 @@ function addSelectedToGoalProgression() {
         drink.selected = false;
       }
     }
+    
   }
   if (loggedInUserId() > -1) {
     let index = findIndexOfUserId(id);
     model.goals[index].progression += addToProgression;
   }
+  goToPage('loggedInUserProfilePage');
 }
