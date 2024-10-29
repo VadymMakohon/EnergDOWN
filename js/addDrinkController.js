@@ -14,10 +14,10 @@ function drinksHTML() {
   if (drinks.length > 0) {
     for (const drink of drinks) {
       let idOfSelectedDrink = drink.drinkId;
-      drinksHtml += `<li button onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg</li>`;
+      let drinkStyle = drink.selected ? 'gray' : 'white';
+      drinksHtml += `<li button style="background:${drinkStyle}" onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg</li>`;
     }
   }
-  console.log(drinks);
   return drinksHtml;
 }
 
@@ -28,6 +28,7 @@ function selectDrink(selectedDrinkId) {
       drink.selected = !drink.selected;
     }
   }
+  updateView();
 }
 
 function addSelectedToGoalProgression() {
