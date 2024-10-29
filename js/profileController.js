@@ -32,3 +32,45 @@ function getComments(id) {
   }
   return userProfileComments;
 }
+
+function getProfileGoalsListHTML(id) {
+  let goalsHtml = ``;
+  let goals = getProfileGoal(id);
+
+  if (goals.length > 0) {
+    for (const goal of goals) {
+      goalsHtml += `<p>Goal: ${goal.goal}mg / ${goal.progression}mg</p>`;
+    }
+  } else {
+    goalsHtml = `<p>You don't have any goals</p>`;
+  }
+  console.log(goals);
+
+  return goalsHtml;
+}
+
+function getProfileGoal(id) {
+  let goals = [];
+
+  for (let goal of model.goals) {
+    if (goal.userId == id) {
+      goals.push(goal);
+    }
+  }
+
+  return goals;
+}
+
+function getProfileGoalGraph(id) {
+  let goalGraph = ``;
+  for (let goal of model.goals) {
+    if (goal.userId == id) {
+      goalGraph = /*HTML*/`
+        <svg viewBox="0 0 32 32">
+        <circle class='first' stroke-dasharray="${(goal.progression/goal.goal)*100} 100"></circle>
+        </svg>
+      `;
+    }
+  }
+  return goalGraph;
+}
