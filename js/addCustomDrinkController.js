@@ -5,6 +5,7 @@ function createDrink() {
     name: model.inputs.addCustomDrinkPage.customDrinkName,
     caffeineContent: model.inputs.addCustomDrinkPage.coffeineContent,
     image: model.inputs.addCustomDrinkPage.customDrinkImage,
+    selected: model.inputs.addCustomDrinkPage.selected,
   };
   model.drinks.push(newDrink);
   console.log(newDrink);
