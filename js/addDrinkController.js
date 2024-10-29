@@ -31,19 +31,19 @@ function selectDrink(selectedDrinkId) {
 }
 
 function addSelectedToGoalProgression() {
-  let addToGoal = 0;
-  let theseDrinks = getDrinks();
+  let addToProgression = 0;
+  let drinks = getDrinks();
   let id = loggedInUserId();
-  if (theseDrinks.length > 0) {
-    for (const drink of theseDrinks) {
+  if (drinks.length > 0) {
+    for (const drink of drinks) {
       if (drink.selected) {
-        addToGoal += drink.caffeineContent;
+        addToProgression += drink.caffeineContent;
         drink.selected = false;
       }
     }
   }
   if (loggedInUserId() > -1) {
     let index = findIndexOfUserId(id);
-    model.goals[index].progression += addToGoal;
+    model.goals[index].progression += addToProgression;
   }
 }
