@@ -1,2 +1,5 @@
 function addFriend(friendName) {
-    if (!friendName) return;
+    if (!friendName) {
+        console.error("Friend name is empty.");
+        return;
+    }
