@@ -58,7 +58,7 @@ const model = {
 
     addCustomDrinkPage: {
       customDrinkName: '',
-      coffeineContent: '',
+      customCaffeineContent: 0,
       customDrinkImage: '',
       customDrinkId: 0,
       selected: false,
