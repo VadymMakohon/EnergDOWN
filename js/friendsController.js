@@ -7,7 +7,7 @@ function getFriends() {
     return userIndex > -1 && model.users[userIndex].friends ? model.users[userIndex].friends : [];
 }
 
-function friendsListHTML() {
+function friendsListHTML2() {
     const friends = getFriends();
     let friendsHtml = '';
 
