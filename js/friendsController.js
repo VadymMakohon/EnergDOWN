@@ -22,6 +22,7 @@ function addFriend(friendName) {
             if (user.username == friendName) userExist = true;
           }
         if(!userExist){
+            document.getElementById('newFriendName').value = '';
             alert("This does not exist.");
             return;
         }
