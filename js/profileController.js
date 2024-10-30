@@ -63,7 +63,7 @@ function getProfileGoalsListHTML(id) {
 
   if (goals.length > 0) {
     for (const goal of goals) {
-      goalsHtml += `<p>Goal: ${goal.progression}mg / ${goal.goal}mg</p>`;
+      goalsHtml += `<p>Mål: ${goal.progression}mg / ${goal.goal}mg</p>`;
     }
   } else {
     goalsHtml = `<p>You don't have any goals</p>`;
