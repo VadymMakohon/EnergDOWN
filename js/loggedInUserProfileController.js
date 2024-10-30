@@ -20,10 +20,10 @@ function getLoggedInFavoriteDrinks() {
     if (favoriteDrinks.userId == userId)
       for (let drinks of model.drinks) {
         if (drinks.drinkId == favoriteDrinks.drinkId) {
-          userProfileDrinks.push(drinks.name);
+          userProfileDrinks.push(drinks);
           if (userProfileDrinks.length > 0) {
             for (let drink of userProfileDrinks) {
-              userProfileDrinksHtml += `<li>${drink}</li>`;
+              userProfileDrinksHtml += `<li>${drink.name} ${drink.caffeineContent}mg <img src="img/tiny-star.png"/></li>`;
             }
           } else {
             userProfileDrinksHtml = `<li>You dont have no favorite drinks</li> `;
