@@ -30,9 +30,10 @@ function addFriend(friendName) {
 
     const userId = loggedInUserId();
     const userIndex = findIndexOfUserId(userId);
+    const friendId = userToId(friendName);
 
     if (userIndex > -1) {
-        const friendsList = model.users[userIndex].friends || [];
+        const friendsList = allFriends();
 
         const isDuplicate = friendsList.some(friend => friend.name === friendName);
         if (isDuplicate) {
@@ -40,11 +41,14 @@ function addFriend(friendName) {
             return;
         }
 
-        friendsList.push({ name: friendName });
+        model.friends.push({
+            userId: userId,
+            friendId: friendId,
+        });
         model.users[userIndex].friends = friendsList;
         alert(`${friendName} added to friends list.`);
 
         document.getElementById('newFriendName').value = '';
-        updateViewFriendsList();
+        updateView();
     }
 }

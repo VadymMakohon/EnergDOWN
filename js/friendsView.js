@@ -5,7 +5,7 @@ function updateViewFriendsList() {
     <div class="friends-view" id="friends-view">
         
         <div class="friend-view-left">
-            <button id="backBtn" class="back-btn-friends" onclick="goToPage('loggedInUserProfilePage')">Tilbake</button>
+            <button id="backBtn" class="back-btn-friends" onclick="goToPreviousPage()">Tilbake</button>
         </div>
         
         <div class="friend-view-middle">

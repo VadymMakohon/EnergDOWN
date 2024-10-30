@@ -6,6 +6,7 @@ const model = {
     //viewHistoryPage, addDrinkPage, addCustomDrinkPage, editGoalPage, editProfilePage, friendsListPage
     loggedIn: false,
     showFriends: false,
+    previousPage: '',
   },
 
   // Del 2: Inputs

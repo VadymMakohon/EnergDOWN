@@ -3,7 +3,7 @@ function updateViewAddCustomDrink() {
   ${createNavigationHtml()}
     <div class="container-acdv">
     <div class="btn-div">
-    <button class="back-btn" id="backToUserProfileButton" onClick="goToPage('addDrinkPage')">Tilbake</button>
+    <button class="back-btn" id="backToUserProfileButton" onClick="goToPreviousPage()">Tilbake</button>
     </div>
     <div class="left">
     

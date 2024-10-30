@@ -1,6 +1,10 @@
 function goToPage(pageName) {
+  model.app.previousPage = model.app.currentPage;
   model.app.currentPage = pageName;
   updateView();
+}
+function goToPreviousPage(){
+  goToPage(model.app.previousPage);
 }
 
 function allFriends() {
@@ -28,6 +32,13 @@ function loggedInUserId() {
 function idToUser(id) {
   for (let user of model.users) {
     if (user.id == id) return user;
+  }
+  return null;
+}
+
+function userToId(username) {
+  for (let user of model.users) {
+    if (user.username == username) return user.id;
   }
   return null;
 }
