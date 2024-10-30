@@ -89,7 +89,7 @@ const model = {
       username: 'Rullekake',
       email: 'test@testus.com',
       password: 'asdf',
-      image: 'img/avatar 4.png',
+      image: 'img/windfish.png',
     },
     {
       id: 3,
