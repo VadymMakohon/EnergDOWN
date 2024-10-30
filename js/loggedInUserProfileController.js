@@ -13,7 +13,6 @@ function getLoggedInProfilePicture() {
 }
 
 function getLoggedInFavoriteDrinks() {
-  let userProfileDrinksHtml = '';
   let userId = loggedInUserId();
   let userProfileDrinks = [];
   for (let favoriteDrinks of model.favoriteDrinks) {
@@ -21,15 +20,21 @@ function getLoggedInFavoriteDrinks() {
       for (let drinks of model.drinks) {
         if (drinks.drinkId == favoriteDrinks.drinkId) {
           userProfileDrinks.push(drinks);
-          if (userProfileDrinks.length > 0) {
-            for (let drink of userProfileDrinks) {
-              userProfileDrinksHtml += `<li>${drink.name} ${drink.caffeineContent}mg <img src="img/tiny-star.png"/></li>`;
-            }
-          } else {
-            userProfileDrinksHtml = `<li>You dont have no favorite drinks</li> `;
-          }
         }
       }
+  }
+  return userProfileDrinks;
+}
+
+function getLoggedInFavoriteDrinksHtml() {
+  let userProfileDrinks = getLoggedInFavoriteDrinks();
+  let userProfileDrinksHtml = '';
+  if (userProfileDrinks.length > 0) {
+    for (let drink of userProfileDrinks) {
+      userProfileDrinksHtml += `<li>${drink.name} ${drink.caffeineContent}mg <img src="img/tiny-star.png"/></li>`;
+    }
+  } else {
+    userProfileDrinksHtml = `<p>You dont have favorite drinks</p> `;
   }
   return userProfileDrinksHtml;
 }
@@ -53,7 +58,7 @@ function getLoggedInCommentsHtml() {
     if (comments.length > 0) {
       userProfileCommentsHtml += `<li>${comment}</li>`;
     } else {
-      userProfileCommentsHtml += `<li>You don't have friends</li>`;
+      userProfileCommentsHtml += `<li>You don't have comments</li>`;
     }
   }
   return userProfileCommentsHtml;

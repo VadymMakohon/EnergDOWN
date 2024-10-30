@@ -1,11 +1,13 @@
 function updateViewUserProfile() {
-    let id = model.inputs.userProfilePage.profileId; 
-    document.getElementById('app').innerHTML = /*HTML*/`
+  let id = model.inputs.userProfilePage.profileId;
+  document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
     <div id="userProfile"> 
     <div class="top-left" id="sectionUser">
         <h1>${getUsername(id)}</h1>
-        <div class="profilePicture"><img src="${getProfilePicture(id)}" class="loggedInProfilePicture"></div>
+        <div class="profilePicture"><img src="${getProfilePicture(
+          id
+        )}" class="loggedInProfilePicture"></div>
         <div class="user-profile-btns">
         </div>
     </div>
@@ -20,7 +22,11 @@ function updateViewUserProfile() {
         <div class="userProfileTitle" id="userProfileTitleFavoriteDrinks">
             <h1>Favoritter</h1>
         </div>
-        <div id="favoriteDrinks">${getFavoriteDrinks(id)}</div>
+            <div id="favoriteDrinks">
+                <ul>
+                    ${getFavoriteDrinksHtml(id)}
+                </ul>
+            </div>
     </div>
     <div class="bottom-right" id="userProfileSectionComments">
         <div class="userProfileTitle" id="userProfileTitleComments">
@@ -28,7 +34,7 @@ function updateViewUserProfile() {
         </div>
         <div class="bottom-right-container">
             <div class="comments-container">
-                <ul id="comments"><li>${getComments(id)}</li></ul>
+                <ul id="comments">${getCommentsHtml(id)}</ul>
             </div>
                 <div class="userProfileSection" id="userProfileSectionNavigation">
                 </div>
