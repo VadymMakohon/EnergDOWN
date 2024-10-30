@@ -40,12 +40,20 @@ function addFriend(friendName) {
             alert("This friend is already in your list.");
             return;
         }
+        let userExist = false;
+        for (let user of model.users) {
+            if (user.username == friendName) userExist = true;
+          }
+        if(userExist == false){
+            alert("This does not exist.");
+            return;
+        }
+        
 
         model.friends.push({
-            userId: userId,
-            friendId: friendId,
+            userId,
+            friendId 
         });
-        model.users[userIndex].friends = friendsList;
         alert(`${friendName} added to friends list.`);
 
         document.getElementById('newFriendName').value = '';
