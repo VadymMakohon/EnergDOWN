@@ -30,7 +30,7 @@ function addFriend(friendName) {
 
     const userId = loggedInUserId();
     const userIndex = findIndexOfUserId(userId);
-    const friendId = idToUser(friendName);
+    const friendId = userToId(friendName);
 
     if (userIndex > -1) {
         const friendsList = allFriends();
@@ -49,6 +49,6 @@ function addFriend(friendName) {
         alert(`${friendName} added to friends list.`);
 
         document.getElementById('newFriendName').value = '';
-        updateViewFriendsList();
+        updateView();
     }
 }
