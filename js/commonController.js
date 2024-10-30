@@ -36,6 +36,13 @@ function idToUser(id) {
   return null;
 }
 
+function userToId(username) {
+  for (let user of model.users) {
+    if (user.username == username) return user.id;
+  }
+  return null;
+}
+
 function findIndexOfUserId(x) {
   for (let i = 0; i <= model.users.length; i++) {
     if (model.users[i].id == x) return i;
