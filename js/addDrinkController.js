@@ -47,5 +47,5 @@ function addSelectedToGoalProgression() {
     let index = findIndexOfUserId(id);
     model.goals[index].progression += addToProgression;
   }
-  goToPage('loggedInUserProfilePage');
+  goToPreviousPage();
 }
