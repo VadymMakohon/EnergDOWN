@@ -42,7 +42,7 @@ function addFriend(friendName) {
         }
 
         model.friends.push({
-            userId: userId, 
+            userId: userId,
             friendId: friendId,
         });
         model.users[userIndex].friends = friendsList;
