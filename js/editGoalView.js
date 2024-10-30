@@ -9,7 +9,7 @@ function updateViewEditGoal() {
             <div id="dailyGoalProgression">${goalsListHTML()}</div>
             <div class="graph">${getGoalGraph()}</div>
             <div>Ditt nåværende mål: ${getGoalText()}</div>
-            <input type = "number" placeholder="Endre mål" required oninput = "model.inputs.editProfilePage.goal = this.value"/>
+            <input type = "number" placeholder="Endre mål" required oninput = "model.inputs.editGoalPage.goal = this.value"/>
             <button class="add-drink-btn" onclick = "editGoal()">Endre mål</button>
 
         </header>

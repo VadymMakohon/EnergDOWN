@@ -1,10 +1,14 @@
 function editGoal() {
-    const inputs = model.inputs.editProfilePage;
-    const newGoal = inputs.goal;
+    const newGoal = model.inputs.editGoalPage.goal;
     let id = loggedInUserId();
-    if (loggedInUserId() > -1) {
-        let index = findIndexOfUserId(id);
-        model.goals[index].goal = newGoal;
+    if (loggedInUserId() < 0) return;
+    
+    for (let goal of model.goals){
+        if(goal.userId == id){
+            goal.goal = newGoal;
+        }
     }
+    
     goToPage('loggedInUserProfilePage');
 }
+
