@@ -87,15 +87,18 @@ function getProfileGoal(id) {
 
 function getProfileGoalGraph(id) {
   let goalGraph = ``;
+  let colour = 'blue';
   for (let goal of model.goals) {
     if (goal.userId == id) {
-      goalGraph = /*HTML*/ `
-        <svg viewBox="0 0 32 32">
-        <circle class='first' stroke-dasharray="${
-          (goal.progression / goal.goal) * 100
-        } 100"></circle>
-        </svg>
+      if(goal.progression > goal.goal){
+        colour = 'red';
+      }
+      goalGraph = /*HTML*/`
+      <svg viewBox="0 0 32 32">
+      <circle class='${colour}' stroke-dasharray="${(goal.progression/goal.goal)*100} 100"></circle>
+      </svg>
       `;
+
     }
   }
   return goalGraph;
