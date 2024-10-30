@@ -75,7 +75,7 @@ const model = {
       username: '',
       email: '',
       password: '',
-      image: '',
+      image: 'img/Profile_placeholder.png',
     },
     {
       id: 1,

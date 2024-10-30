@@ -180,6 +180,14 @@ p {
   justify-content: space-between;
   align-content: end;
   align-items: end;
+  margin-top: 1em;
+}
+.top-right-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.top-right-btns button {
+  width: 22%;
 }
 #editGoalButton {
   justify-self: end;
@@ -197,6 +205,7 @@ p {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: rgb(96, 78, 161) rgb(177, 77, 118);
+  max-height: 220px;
 }
 #userProfileSectionNavigation {
   display: flex;
@@ -222,6 +231,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 0;
 }
 .comments-container li {
   flex-grow: 1;
@@ -235,8 +245,8 @@ h1 {
 #favoriteDrinks ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.1rem;
+  grid-template-columns: repeat(4, auto);
+  gap: 0.4rem;
   padding: 0.5rem;
 }
 #favoriteDrinks li {
@@ -257,6 +267,28 @@ h1 {
 }
 .top-right-profile p {
   margin: 0.7em 0 0.5em 0 !important;
+}
+.bottom-right-container-profile {
+  display: flex;
+  flex-direction: column;
+}
+#userProfileSectionNavigation-profile {
+  height: 50px;
+  gap: 1rem;
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+}
+
+#userProfileSectionNavigation-profile input {
+  padding: 0.6em;
+  border-radius: 7px;
+  border: none;
+  width: 70%;
+  height: 70%;
+}
+#userProfileSectionNavigation-profile button {
+  width: 25%;
 }
 
 /* --- End --- */
@@ -342,18 +374,18 @@ button:hover {
 .nav-buttons button {
   width: 100%;
 }
-.name {
-  flex-grow: 1;
-  text-align: center;
-  cursor: pointer;
-  /* margin-right: 5em; */
-}
+
 .name:hover {
   transform: scale(1.1);
 }
 
 .friends-button {
   width: 10%;
+}
+.navigation img {
+  width: 35%;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 /* login view styles */

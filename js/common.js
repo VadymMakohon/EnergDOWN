@@ -11,7 +11,7 @@ function createNavigationHtml() {
             <nav class="nav-buttons">
               ${buttonsHtml}
             </nav>
-            <h2 class="name" onclick="goToPage(bannerButtonCheck())">EnergDOWN</h2>
+            <img class="name" src="img/logo3.png" onclick="goToPage(bannerButtonCheck())"/>
 
             ${friendsListButton}
         </div>

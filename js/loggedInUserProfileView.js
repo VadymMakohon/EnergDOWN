@@ -16,7 +16,7 @@ function updateViewLoggedInUserProfile() {
                 </div>
                 <div id="dailyGoalProgression">${goalsListHTML()}</div>
                 <div class="graph">${getGoalGraph()}</div>
-                <div>
+                <div class="top-right-btns">
                     <button id="addDrinkButton" onClick="goToPage('addDrinkPage')">Legg til drikke</button>
                     <button id="editGoalButton" onClick="goToPage('editGoalPage')">Endre mål</button>
                 </div>

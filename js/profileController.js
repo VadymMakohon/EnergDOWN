@@ -29,7 +29,7 @@ function getFavoriteDrinksHtml(id) {
       drinksHtml += `<li>${drink.name} ${drink.caffeineContent}mg <img src="img/tiny-star.png"/></li>`;
     }
   } else {
-    drinksHtml += `<p>No Favorite Drinks</p>`;
+    drinksHtml += `<l>No Favorite Drinks</l>`;
   }
   return drinksHtml;
 }
@@ -51,7 +51,7 @@ function getCommentsHtml(id) {
       userCommentsHtml += `<li>${comment}</li>`;
     }
   } else {
-    userCommentsHtml += `<p>You don't have friends</p>`;
+    userCommentsHtml += `<l>You don't have friends</l>`;
   }
 
   return userCommentsHtml;
@@ -93,12 +93,13 @@ function getProfileGoalGraph(id) {
       if (goal.progression > goal.goal) {
         colour = 'red';
       }
-      goalGraph = /*HTML*/`
+      goalGraph = /*HTML*/ `
       <svg viewBox="0 0 32 32">
-      <circle class='${colour}' stroke-dasharray="${(goal.progression / goal.goal) * 100} 100"></circle>
+      <circle class='${colour}' stroke-dasharray="${
+        (goal.progression / goal.goal) * 100
+      } 100"></circle>
       </svg>
       `;
-
     }
   }
   return goalGraph;
@@ -106,9 +107,9 @@ function getProfileGoalGraph(id) {
 
 function submitComment(localId, commentText) {
   let userId = loggedInUserId();
-  if (commentText != "") {
+  if (commentText != '') {
     let index = findIndexOfUserId(userId);
-    model.comments[index].comment = model.inputs.userProfilePage.commentInput
+    model.comments[index].comment = model.inputs.userProfilePage.commentInput;
     let newComment = {
       userId: localId,
       friendId: userId,

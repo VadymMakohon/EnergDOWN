@@ -58,7 +58,7 @@ function getLoggedInCommentsHtml() {
     if (comments.length > 0) {
       userProfileCommentsHtml += `<li>${comment}</li>`;
     } else {
-      userProfileCommentsHtml += `<li>You don't have comments</li>`;
+      userProfileCommentsHtml += `<p>You don't have comments</p>`;
     }
   }
   return userProfileCommentsHtml;
