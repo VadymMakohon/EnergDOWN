@@ -22,7 +22,9 @@ function updateViewLoggedInUserProfile() {
                 <div class="userProfileTitle" id="userProfileTitleFavoriteDrinks">
                     <h1>Favoritter</h1>
                 </div>
-                <div id="favoriteDrinks">${getLoggedInFavoriteDrinks()}</div>
+                <div id="favoriteDrinks">
+                    <ul>${getLoggedInFavoriteDrinks()}</ul>
+                </div>
             </div>
             <div class="bottom-right" id="userProfileSectionComments">
                 <div class="userProfileTitle" id="userProfileTitleComments">

@@ -194,6 +194,12 @@ p {
 #userProfile .top-right p {
   margin: 0;
 }
+/* #favoriteDrinks ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+} */
 
 /* --- Logged in user profile view styles --- */
 .button-container {
@@ -455,6 +461,7 @@ button:hover {
 
 .loggedInProfilePicture {
   height: 10rem;
+  width: 10rem;
   border-radius: 50%;
 }
 
