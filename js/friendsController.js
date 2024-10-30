@@ -42,13 +42,13 @@ function addFriend(friendName) {
         }
 
         model.friends.push({
-            userId: userId, 
+            userId: userId,
             friendId: friendId,
         });
         model.users[userIndex].friends = friendsList;
         alert(`${friendName} added to friends list.`);
 
         document.getElementById('newFriendName').value = '';
-        updateViewFriendsList();
+        updateView();
     }
 }
