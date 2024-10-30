@@ -1,26 +1,4 @@
 
-function getFriends() {
-    const userId = loggedInUserId();
-    const userIndex = findIndexOfUserId(userId);
-
-    return userIndex > -1 && model.users[userIndex].friends ? model.users[userIndex].friends : [];
-}
-
-function friendsListHTML2() {
-    const friends = getFriends();
-    let friendsHtml = '';
-
-    if (friends.length > 0) {
-        friends.forEach(friend => {
-            friendsHtml += `<li>${friend.name}</li>`;
-        });
-    } else {
-        friendsHtml = "<p>No friends added yet.</p>";
-    }
-
-    return friendsHtml;
-}
-
 function addFriend(friendName) {
     if (!friendName.trim()) {
         alert("Please enter a friend's name.");
@@ -43,7 +21,7 @@ function addFriend(friendName) {
         for (let user of model.users) {
             if (user.username == friendName) userExist = true;
           }
-        if(userExist == false){
+        if(!userExist){
             alert("This does not exist.");
             return;
         }
