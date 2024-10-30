@@ -11,16 +11,16 @@ function updateViewUserProfile() {
         <div class="user-profile-btns">
         </div>
     </div>
-    <div class="top-right" id="userProfileSectionGoal">
+    <div class="top-right top-right-profile" id="userProfileSectionGoal profileGoal">
         <div class="userProfileTitle" id="userProfileTitleGoal">
-        <h1>Dagens mål</h1>
+             <h1>${getUsername(id)}'s mål</h1>
         </div>
         <div id="dailyGoalProgression">${getProfileGoalsListHTML(id)}</div>
         <div class="graph">${getProfileGoalGraph(id)}</div>
     </div>
     <div class="bottom-left" id="userProfileSectionFavoriteDrinks">
         <div class="userProfileTitle" id="userProfileTitleFavoriteDrinks">
-            <h1>Favoritter</h1>
+            <h1>${getUsername(id)}'s favoritter</h1>
         </div>
             <div id="favoriteDrinks">
                 <ul>
@@ -30,7 +30,7 @@ function updateViewUserProfile() {
     </div>
     <div class="bottom-right" id="userProfileSectionComments">
         <div class="userProfileTitle" id="userProfileTitleComments">
-            <h1>Kommentarer</h1>
+            <h1>${getUsername(id)}'s kommentarer</h1>
         </div>
         <div class="bottom-right-container">
             <div class="comments-container">
