@@ -1,6 +1,10 @@
 function goToPage(pageName) {
+  model.app.previousPage = model.app.currentPage;
   model.app.currentPage = pageName;
   updateView();
+}
+function goToPreviousPage(){
+  goToPage(model.app.previousPage);
 }
 
 function allFriends() {
