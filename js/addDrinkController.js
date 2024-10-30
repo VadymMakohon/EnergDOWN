@@ -15,7 +15,7 @@ function drinksHTML() {
     for (const drink of drinks) {
       let idOfSelectedDrink = drink.drinkId;
       let drinkStyle = drink.selected ? 'gray' : 'white';
-      drinksHtml += `<li button style="background:${drinkStyle}" onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg</li>`;
+      drinksHtml += `<li button style="background:${drinkStyle}" onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg <img src="img/tiny-star.png"/></li>`;
     }
   }
   return drinksHtml;
@@ -42,7 +42,6 @@ function addSelectedToGoalProgression() {
         drink.selected = false;
       }
     }
-    
   }
   if (loggedInUserId() > -1) {
     let index = findIndexOfUserId(id);

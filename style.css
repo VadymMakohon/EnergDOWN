@@ -8,7 +8,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
+  max-width: 1400px;
+  margin: 0 auto;
   background-image: linear-gradient(to right, #e22865, #37adcd);
 }
 
@@ -113,9 +114,14 @@ p {
   justify-content: center;
 }
 /* --- Main view Stryle --- END --- */
+
+/* --- Logged in user profile view styles --- */
+
 #userProfile {
   display: grid;
   height: 70vh;
+
+  overflow: hidden;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
@@ -137,8 +143,7 @@ p {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0.5rem;
-  overflow: hidden;
-  max-height: 100%;
+  /* max-height: 100%; */
 }
 #userProfile .top-right {
   grid-area: topR;
@@ -153,6 +158,9 @@ p {
   grid-area: bottomL;
   border: 1px solid black;
   padding: 1rem;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(96, 78, 161) rgb(177, 77, 118);
 }
 #userProfile .bottom-right {
   grid-area: bottomR;
@@ -176,8 +184,16 @@ p {
 }
 .bottom-right-container {
   display: flex;
+  gap: 1rem;
   width: 100%;
   justify-content: space-between;
+}
+.comments-container {
+  flex-grow: 1;
+  align-content: end;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(96, 78, 161) rgb(177, 77, 118);
 }
 #userProfileSectionNavigation {
   display: flex;
@@ -194,14 +210,36 @@ p {
 #userProfile .top-right p {
   margin: 0;
 }
-/* #favoriteDrinks ul {
+.comments-container ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.5rem;
-} */
+}
+.comments-container li {
+  flex-grow: 1;
+  width: 92%;
+  padding: 0.7em;
 
-/* --- Logged in user profile view styles --- */
+  border: 1px solid rgb(58, 58, 58);
+}
+
+#favoriteDrinks ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.1rem;
+  padding: 0.5rem;
+}
+#favoriteDrinks li {
+  padding: 10px;
+  margin: 3px 0;
+  background-color: #f4f4f4;
+  color: black;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
 .button-container {
   display: flex;
   flex-direction: column;
@@ -235,7 +273,8 @@ button:hover {
   align-items: center;
   border-bottom: 1px solid black;
   margin-bottom: 3em;
-  width: 90vw;
+  margin: 0 auto 3em auto;
+  width: 95vw;
   position: relative;
 }
 

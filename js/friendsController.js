@@ -1,4 +1,3 @@
-// Brukte samme logikken her som i addDrinkController. Litt usikkert om det er riktig, selv om funksjon virker!!!
 
 function getFriends() {
     const userId = loggedInUserId();
