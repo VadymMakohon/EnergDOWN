@@ -617,6 +617,10 @@ circle {
   cy: 16;
 }
 
-circle.first {
+circle.blue {
   stroke: blue;
+}
+
+circle.red {
+  stroke: red;
 }
