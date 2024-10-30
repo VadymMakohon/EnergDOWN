@@ -90,16 +90,31 @@ function getProfileGoalGraph(id) {
   let colour = 'blue';
   for (let goal of model.goals) {
     if (goal.userId == id) {
-      if(goal.progression > goal.goal){
+      if (goal.progression > goal.goal) {
         colour = 'red';
       }
       goalGraph = /*HTML*/`
       <svg viewBox="0 0 32 32">
-      <circle class='${colour}' stroke-dasharray="${(goal.progression/goal.goal)*100} 100"></circle>
+      <circle class='${colour}' stroke-dasharray="${(goal.progression / goal.goal) * 100} 100"></circle>
       </svg>
       `;
 
     }
   }
   return goalGraph;
+}
+
+function submitComment(localId, commentText) {
+  let userId = loggedInUserId();
+  if (commentText != "") {
+    let index = findIndexOfUserId(userId);
+    model.comments[index].comment = model.inputs.userProfilePage.commentInput
+    let newComment = {
+      userId: localId,
+      friendId: userId,
+      comment: commentText,
+    };
+    model.comments.push(newComment);
+  }
+  updateView();
 }

@@ -1,13 +1,13 @@
 function updateViewUserProfile() {
-  let id = model.inputs.userProfilePage.profileId;
-  document.getElementById('app').innerHTML = /*HTML*/ `
+    let id = model.inputs.userProfilePage.profileId;
+    document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
     <div id="userProfile"> 
     <div class="top-left" id="sectionUser">
         <h1>${getUsername(id)}</h1>
         <div class="profilePicture"><img src="${getProfilePicture(
-          id
-        )}" class="loggedInProfilePicture"></div>
+        id
+    )}" class="loggedInProfilePicture"></div>
         <div class="user-profile-btns">
         </div>
     </div>
@@ -35,6 +35,8 @@ function updateViewUserProfile() {
         <div class="bottom-right-container">
             <div class="comments-container">
                 <ul id="comments">${getCommentsHtml(id)}</ul>
+                <input type="textfield" placeholder="Skriv en kommentar" id="commentForUser">
+                <button onclick="submitComment(${id}, commentForUser.value)">Legg igjen kommentar</button>
             </div>
                 <div class="userProfileSection" id="userProfileSectionNavigation">
                 </div>
