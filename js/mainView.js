@@ -15,7 +15,7 @@ function updateViewMain() {
             </div>
             <div class="buttons-main">
                 <div>
-                    <button onclick="goToPage('viewHistoryPage')">Vis historikk</button>
+                    
                     <button onclick="goToPage('addDrinkPage')">Legg til drikke</button>
 
                 </div>

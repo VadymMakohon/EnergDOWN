@@ -16,7 +16,10 @@ function updateViewLoggedInUserProfile() {
                 </div>
                 <div id="dailyGoalProgression">${goalsListHTML()}</div>
                 <div class="graph">${getGoalGraph()}</div>
-                <button id="editGoalButton" onClick="goToPage('editGoalPage')">Endre mål</button>
+                <div>
+                    <button id="addDrinkButton" onClick="goToPage('addDrinkPage')">Legg til drikke</button>
+                    <button id="editGoalButton" onClick="goToPage('editGoalPage')">Endre mål</button>
+                </div>
             </div>
             <div class="bottom-left" id="userProfileSectionFavoriteDrinks">
                 <div class="userProfileTitle" id="userProfileTitleFavoriteDrinks">
@@ -35,8 +38,8 @@ function updateViewLoggedInUserProfile() {
                         <ul id="comments">${getLoggedInCommentsHtml()}</ul>
                     </div>
                         <div class="userProfileSection" id="userProfileSectionNavigation">
-                            <button id="showHistoryButton" onClick="goToPage('viewHistoryPage')">Vis historikk</button>
-                            <button id="addDrinkButton" onClick="goToPage('addDrinkPage')">Legg til drikke</button>
+                            
+                            
                         </div>
                     </div>
             </div>
