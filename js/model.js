@@ -259,7 +259,7 @@ const model = {
   ],
 
   favoriteDrinks: [
-   
+    { userId: 0, drinkId: 0 },
   ],
 
   friends: [

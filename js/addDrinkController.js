@@ -74,9 +74,7 @@ function removeSelectedDrink() {
   if (drinks.length > 0) {
     for (const drink of drinks) {
       if (drink.selected && drink.userId == id) {
-        console.log("yes", drink.drinkId)
         drink.drinkId = null;
-        console.log("yes2", drink.drinkId)
       }
       drink.selected = false;
       updateView();
@@ -86,27 +84,25 @@ function removeSelectedDrink() {
 }
 
 function removeDrinkAsFavorite() {
+  let favorites = model.favoriteDrinks;
   let drinks = getDrinks();
   let id = loggedInUserId();
-  console.log(model.favoriteDrinks);
-  if (drinks.length > 0) {
-    for (const favorite of model.favoriteDrinks) {
-      console.log(favorite);
-      for( const drink of drinks){
+  if (favorites.length > 0) {
+    for (const drink of drinks) {
       if (drink.selected && isDrinkFavorite(id, drink.drinkId)) {
-        
-        
-       favorite.userId = null;
-       favorite.drinkId = null;
-       console.log(model.favoriteDrinks);
-       
+        for (const fav of favorites) {
+          if (drink.drinkId == fav.drinkId) {
+            fav.drinkId = null;
+            fav.userId = null;
+          }
+        }
       }
       drink.selected = false;
-    }
       updateView();
     }
   }
 }
+
 
 function addDrinkAsFavorite() {
   let drinks = getDrinks();
@@ -114,12 +110,12 @@ function addDrinkAsFavorite() {
   if (drinks.length > 0) {
     for (const drink of drinks) {
       if (drink.selected && !isDrinkFavorite(id, drink.drinkId)) {
-        
-       newFavorite = {
-        userId: id,
-        drinkId: drink.drinkId,
-       }
-       model.favoriteDrinks.push(newFavorite);
+
+        newFavorite = {
+          userId: id,
+          drinkId: drink.drinkId,
+        }
+        model.favoriteDrinks.push(newFavorite);
       }
       drink.selected = false;
       updateView();
