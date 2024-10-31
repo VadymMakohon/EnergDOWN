@@ -68,3 +68,8 @@ function goalsListHTML() {
 
   return goalsHtml;
 }
+
+function favoriteStarHTML(userId, drinkId) {
+  if(!isDrinkFavorite(userId, drinkId)) return ``;
+  return `<img src="img/tiny-star.png"/></li>`;
+}
