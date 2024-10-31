@@ -26,7 +26,6 @@ p {
 }
 
 /* friend list styles */
-
 .friends-container {
   position: absolute;
   right: 20px;
@@ -54,13 +53,13 @@ p {
   flex-direction: column;
   gap: 2rem;
 }
-/* ------------- */
 
 /* edit goal view styles */
 .edit-goal-container {
   display: flex;
   flex-direction: column;
 }
+
 .edit-goal-container input {
   width: 20%;
   align-self: center;
@@ -78,8 +77,6 @@ p {
 .edit-goal-container button {
   align-self: center;
 }
-
-/* ------- */
 
 /* --- Main view styles --- */
 .main-view {
@@ -102,12 +99,14 @@ p {
   justify-content: center;
   align-content: center;
 }
+
 .main-view .summery-main {
   grid-area: summery;
   justify-content: center;
   align-content: center;
   border: 1px solid black;
 }
+
 .main-view .motivation-main {
   grid-area: motivation;
   justify-content: center;
@@ -121,6 +120,7 @@ p {
   align-content: center;
   border: 1px solid black;
 }
+
 .main-view .buttons-main div {
   display: flex;
   justify-content: space-around;
@@ -137,7 +137,6 @@ p {
 /* --- Main view Stryle --- END --- */
 
 /* --- Logged in user profile view styles --- */
-
 #userProfile {
   display: grid;
   height: 70vh;
@@ -166,6 +165,7 @@ p {
   margin-top: 0;
   padding: 1rem;
 }
+
 #userProfile .top-right {
   grid-area: topR;
   border: 1px solid black;
@@ -175,6 +175,7 @@ p {
   padding: 1rem;
   max-height: 100%;
 }
+
 #userProfile .bottom-left {
   grid-area: bottomL;
   border: 1px solid black;
@@ -183,6 +184,7 @@ p {
   scrollbar-width: thin;
   scrollbar-color: rgb(96, 78, 161) rgb(177, 77, 118);
 }
+
 #userProfile .bottom-right {
   grid-area: bottomR;
   border: 1px solid black;
@@ -197,10 +199,12 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 .top-right-btns {
   display: flex;
   justify-content: space-between;
 }
+
 .top-right-btns button {
   width: 22%;
 }
@@ -211,6 +215,7 @@ p {
   width: 100%;
   justify-content: space-between;
 }
+
 .comments-container {
   flex-grow: 1;
   align-content: end;
@@ -219,25 +224,31 @@ p {
   scrollbar-color: rgb(96, 78, 161) rgb(177, 77, 118);
   max-height: 200px;
 }
+
 #userProfileSectionNavigation {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   /* width: 100%; */
 }
+
 #userProfileSectionNavigation button {
   width: 100%;
 }
+
 #userProfile .top-right h1 {
   margin-top: 0;
 }
+
 #userProfile .top-right p {
   margin: 0;
 }
+
 #userProfile p,
 h1 {
   color: rgb(37, 37, 37);
 }
+
 .comments-container ul {
   list-style: none;
   display: flex;
@@ -245,6 +256,7 @@ h1 {
   gap: 0.5rem;
   padding: 0;
 }
+
 .comments-container li {
   flex-grow: 1;
   width: 98%;
@@ -261,6 +273,7 @@ h1 {
   gap: 0.4rem;
   padding: 0.5rem;
 }
+
 #favoriteDrinks li {
   padding: 10px;
   margin: 3px 0;
@@ -281,13 +294,16 @@ h1 {
 .top-right-profile {
   display: block !important;
 }
+
 .top-right-profile p {
   margin: 0.7em 0 0.5em 0 !important;
 }
+
 .bottom-right-container-profile {
   display: flex;
   flex-direction: column;
 }
+
 #userProfileSectionNavigation-profile {
   height: 50px;
   gap: 1rem;
@@ -303,6 +319,7 @@ h1 {
   width: 70%;
   height: 70%;
 }
+
 #userProfileSectionNavigation-profile button {
   width: 25%;
 }
@@ -315,13 +332,13 @@ h1 {
 /* --- End --- */
 
 /* ---- add drink view styles ---- */
-
 .add-drink-view {
   padding: 20px;
   max-width: 800px;
   margin: auto;
   text-align: center;
 }
+
 .add-drink-view button {
   width: 20%;
 }
@@ -392,6 +409,7 @@ button:hover {
   justify-content: start;
   gap: 1rem;
 }
+
 .nav-buttons button {
   width: 100%;
 }
@@ -404,9 +422,11 @@ button:hover {
 .friends-button {
   width: 12%;
 }
+
 .loggut-button {
   width: 30%;
 }
+
 .navigation img {
   width: 25%;
   margin: 0 auto;
@@ -414,7 +434,6 @@ button:hover {
 }
 
 /* login view styles */
-
 .login-container {
   display: flex;
   flex-direction: column;
@@ -429,6 +448,7 @@ button:hover {
   border: none;
   width: 250px;
 }
+
 .login-button {
   display: flex;
   margin: 0 auto;
@@ -437,7 +457,6 @@ button:hover {
 }
 
 /* create user view styles */
-
 .container-cuv {
   display: flex;
   flex-direction: row;
@@ -460,6 +479,7 @@ button:hover {
   border: none;
   width: 250px;
 }
+
 .right {
   display: flex;
   justify-content: center;
@@ -469,6 +489,7 @@ button:hover {
 .right img {
   margin-top: 20px;
 }
+
 .create-user-btn-container {
   display: flex;
   justify-content: center;
@@ -554,7 +575,6 @@ button:hover {
 }
 
 /* Friend List view styles */
-
 #friends-view .back-btn-friends {
   width: 100%;
 }
@@ -582,6 +602,7 @@ button:hover {
   max-height: 250px;
   width: 200px; */
 }
+
 #friends-view li {
   gap: 2rem;
 }
@@ -589,6 +610,7 @@ button:hover {
 #friends-view li:hover {
   transform: scale(1.1);
 }
+
 .friends-view-right {
   display: flex;
   align-content: start;
@@ -596,13 +618,13 @@ button:hover {
   gap: 1rem;
   justify-content: center;
 }
+
 .friends-view-right button {
   width: 40%;
   margin: 0;
 }
 
 /* Logged in user profile view styles */
-
 .loggedInProfilePicture {
   max-width: 9.6rem;
   height: 9.6rem;
