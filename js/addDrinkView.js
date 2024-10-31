@@ -11,8 +11,8 @@ function updateViewAddDrink() {
            ${drinksHTML()}
         </ul>
 
-        <button id="customDrinkBtn" class="custom-drink-btn" onclick="goToPage('addCustomDrinkPage')">Lag egendefinert drikke <i class="fa-solid fa-plus"></i></button>
-        <button id="confirmBtn" class="confirm-btn" onClick="addSelectedToGoalProgression()">Bekreft at du har drukket dette <i class="fa-solid fa-check"></i></button>
+        <button id="customDrinkBtn" class="custom-drink-btn" onclick="goToPage('addCustomDrinkPage')">Lag ny drikke <i class="fa-solid fa-plus"></i></button>
+        <button id="confirmBtn" class="confirm-btn" onClick="addSelectedToGoalProgression()">Bekreft valgte <i class="fa-solid fa-check"></i></button>
     </div>
     ${showFriendList()}
     `;
