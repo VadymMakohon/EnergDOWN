@@ -38,7 +38,7 @@ function updateViewUserProfile() {
             </div>
             <div class="userProfileSection-profile" id="userProfileSectionNavigation-profile">
             <input type="textfield" placeholder="Skriv en kommentar" id="commentForUser">
-            <button onclick="submitComment(${id}, commentForUser.value)">Legg kommentar</button>
+            <button onclick="submitComment(${id}, commentForUser.value)">Legg kommentar <i class="fa-solid fa-pen"></i></button>
                 </div>
             </div>
     </div>
