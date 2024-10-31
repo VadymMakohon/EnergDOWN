@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>EnergDOWN</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>EnergDOWN</title>
+    <script src="js/addCustomDrinkController.js"></script>
+    <script src="js/addCustomDrinkView.js"></script>
+    <script src="js/addDrinkController.js"></script>
+    <script src="js/addDrinkView.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/commonController.js"></script>
+    <script src="js/createUserController.js"></script>
+    <script src="js/createUserView.js"></script>
+    <script src="js/editGoalController.js"></script>
+    <script src="js/editGoalView.js"></script>
+    <script src="js/editProfileController.js"></script>
+    <script src="js/editProfileView.js"></script>
+    <script src="js/friendsController.js"></script>
+    <script src="js/friendsView.js"></script>
+    <script src="js/historyController.js"></script>
+    <script src="js/historyView.js"></script>
+    <script src="js/loggedInUserProfileController.js"></script>
+    <script src="js/loggedInUserProfileView.js"></script>
+    <script src="js/loginController.js"></script>
+    <script src="js/loginView.js"></script>
+    <script src="js/mainController.js"></script>
+    <script src="js/mainView.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/profileController.js"></script>
+    <script src="js/profileView.js"></script>
+    <script src="js/startView.js"></script>
+  </head>
 
-  <script src="js/addCustomDrinkController.js"></script>
-  <script src="js/addCustomDrinkView.js"></script>
-  <script src="js/addDrinkController.js"></script>
-  <script src="js/addDrinkView.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/commonController.js"></script>
-  <script src="js/createUserController.js"></script>
-  <script src="js/createUserView.js"></script>
-  <script src="js/editGoalController.js"></script>
-  <script src="js/editGoalView.js"></script>
-  <script src="js/editProfileController.js"></script>
-  <script src="js/editProfileView.js"></script>
-  <script src="js/friendsController.js"></script>
-  <script src="js/friendsView.js"></script>
-  <script src="js/historyController.js"></script>
-  <script src="js/historyView.js"></script>
-  <script src="js/loggedInUserProfileController.js"></script>
-  <script src="js/loggedInUserProfileView.js"></script>
-  <script src="js/loginController.js"></script>
-  <script src="js/loginView.js"></script>
-  <script src="js/mainController.js"></script>
-  <script src="js/mainView.js"></script>
-  <script src="js/model.js"></script>
-  <script src="js/profileController.js"></script>
-  <script src="js/profileView.js"></script>
-  <script src="js/startView.js"></script>
+  <body>
+    <main>
+      <div id="app"></div>
 
-</head>
-
-<body>
-  <main>
-    <div id="app"></div>
-
-    <script>
-      updateView();
-      function updateView() {
-        if (model.app.currentPage == 'startPage') updateViewStart();
-        else if (model.app.currentPage == 'createUserPage') updateViewCreateUser();
-        else if (model.app.currentPage == 'loginPage') updateViewLogin();
-        else if (model.app.currentPage == 'mainPage') updateViewMain();
-        else if (model.app.currentPage == 'loggedInUserProfilePage') updateViewLoggedInUserProfile();
-        else if (model.app.currentPage == 'userProfilePage') updateViewUserProfile();
-        else if (model.app.currentPage == 'viewHistoryPage') updateViewHistory();
-        else if (model.app.currentPage == 'addDrinkPage') updateViewAddDrink();
-        else if (model.app.currentPage == 'addCustomDrinkPage') updateViewAddCustomDrink();
-        else if (model.app.currentPage == 'editGoalPage') updateViewEditGoal();
-        else if (model.app.currentPage == 'editProfilePage') updateViewEditProfile();
-        else if (model.app.currentPage == 'friendsListPage') updateViewFriendsList();
-      }
-    </script>
-
-  </main>
-
-</body>
-
+      <script>
+        updateView();
+        function updateView() {
+          if (model.app.currentPage == 'startPage') updateViewStart();
+          else if (model.app.currentPage == 'createUserPage')
+            updateViewCreateUser();
+          else if (model.app.currentPage == 'loginPage') updateViewLogin();
+          else if (model.app.currentPage == 'mainPage') updateViewMain();
+          else if (model.app.currentPage == 'loggedInUserProfilePage')
+            updateViewLoggedInUserProfile();
+          else if (model.app.currentPage == 'userProfilePage')
+            updateViewUserProfile();
+          else if (model.app.currentPage == 'viewHistoryPage')
+            updateViewHistory();
+          else if (model.app.currentPage == 'addDrinkPage')
+            updateViewAddDrink();
+          else if (model.app.currentPage == 'addCustomDrinkPage')
+            updateViewAddCustomDrink();
+          else if (model.app.currentPage == 'editGoalPage')
+            updateViewEditGoal();
+          else if (model.app.currentPage == 'editProfilePage')
+            updateViewEditProfile();
+          else if (model.app.currentPage == 'friendsListPage')
+            updateViewFriendsList();
+        }
+      </script>
+    </main>
+  </body>
 </html>

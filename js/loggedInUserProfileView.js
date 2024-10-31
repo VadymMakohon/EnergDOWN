@@ -6,8 +6,8 @@ function updateViewLoggedInUserProfile() {
                 <h1>${getLoggedInUsername()}</h1>
                 <div class="profilePicture"><img src="${getLoggedInProfilePicture()}" class="loggedInProfilePicture"></div>
                 <div class="user-profile-btns">
-                    <button id="editProfileButton" onClick="goToPage('editProfilePage')">Endre profil</button>
-                    <button id="friendsListButton" onClick="goToPage('friendsListPage')">Venneliste</button>
+                    <button id="editProfileButton" onClick="goToPage('editProfilePage')">Endre profil <i class="fa-solid fa-user-pen"></i></button>
+                    <button id="friendsListButton" onClick="goToPage('friendsListPage')">Venneliste <i class="fa-solid fa-user-group"></i></button>
                 </div>
             </div>
             <div class="top-right" id="userProfileSectionGoal">
@@ -17,8 +17,8 @@ function updateViewLoggedInUserProfile() {
                 <div id="dailyGoalProgression">${goalsListHTML()}</div>
                 <div class="graph">${getGoalGraph()}</div>
                 <div class="top-right-btns">
-                    <button id="addDrinkButton" onClick="goToPage('addDrinkPage')">Legg til drikke</button>
-                    <button id="editGoalButton" onClick="goToPage('editGoalPage')">Endre mål</button>
+                    <button id="addDrinkButton" onClick="goToPage('addDrinkPage')">Legg til drikke <i class="fa-solid fa-plus"></i></button>
+                    <button id="editGoalButton" onClick="goToPage('editGoalPage')">Endre mål <i class="fa-solid fa-pen-to-square"></i></button>
                 </div>
             </div>
             <div class="bottom-left" id="userProfileSectionFavoriteDrinks">

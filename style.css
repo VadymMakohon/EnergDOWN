@@ -356,7 +356,7 @@ button:hover {
   border-bottom: 1px solid black;
   margin-bottom: 3em;
   margin: 0 auto 3em auto;
-  width: 95vw;
+  max-width: 95vw;
   position: relative;
 }
 
@@ -371,10 +371,14 @@ button:hover {
 
 .name:hover {
   transform: scale(1.1);
+  transition: ease;
 }
 
 .friends-button {
-  width: 10%;
+  width: 12%;
+}
+.loggut-button {
+  width: 30%;
 }
 .navigation img {
   width: 25%;

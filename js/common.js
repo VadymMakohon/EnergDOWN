@@ -2,9 +2,9 @@ function createNavigationHtml() {
   let buttonsHtml = '';
   let friendsListButton = '';
   if (model.app.loggedIn == true) {
-    buttonsHtml = `<button class="profile-page-button" onclick="goToPage('loggedInUserProfilePage')">Profil</button>
-                    <button class="loggut-button" onclick="logOut()">Logg ut</button>`;
-    friendsListButton = `<button class="friends-button" onclick="toggleFriendList()">Venne liste</button>`;
+    buttonsHtml = `<button class="profile-page-button" onclick="goToPage('loggedInUserProfilePage')">Profil <i class="fa-solid fa-user"></i></button>
+                    <button class="loggut-button" onclick="logOut()">Logg ut <i class="fa-solid fa-right-from-bracket"></i></button>`;
+    friendsListButton = `<button class="friends-button" onclick="toggleFriendList()">Venneliste <i class="fa-solid fa-user-group"></i></button>`;
   }
   return /*HTML*/ `
         <div class="navigation">
@@ -24,7 +24,7 @@ function showFriendList() {
   if (model.app.showFriends) {
     friendsHtml = /*HTML*/ `
       <div class="friends-container">
-        <h3>Friends List</h3>
+        <h3>Venneliste</h3>
         <ul>
           ${friendsListHTML()}
         </ul>

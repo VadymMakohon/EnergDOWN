@@ -16,7 +16,7 @@ function updateViewMain() {
             <div class="buttons-main">
                 <div>
                     
-                    <button onclick="goToPage('addDrinkPage')">Legg til drikke</button>
+                    <button onclick="goToPage('addDrinkPage')">Legg til drikke <i class="fa-solid fa-plus"></i></button>
 
                 </div>
             </div>
