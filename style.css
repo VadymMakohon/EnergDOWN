@@ -140,13 +140,13 @@ p {
 
 #userProfile .top-left {
   grid-area: topL;
+  display: flex;
+  flex-direction: column;
   border: 1px solid black;
-  justify-content: center;
-  /* align-content: center; */
+  justify-content: space-between;
   margin-bottom: 0;
   margin-top: 0;
-  padding: 0.5rem;
-  /* max-height: 100%; */
+  padding: 1rem;
 }
 #userProfile .top-right {
   grid-area: topR;
@@ -178,9 +178,6 @@ p {
 #userProfile .user-profile-btns {
   display: flex;
   justify-content: space-between;
-  align-content: end;
-  align-items: end;
-  margin-top: 1em;
 }
 .top-right-btns {
   display: flex;
@@ -189,10 +186,7 @@ p {
 .top-right-btns button {
   width: 22%;
 }
-#editGoalButton {
-  justify-self: end;
-  align-self: end;
-}
+
 .bottom-right-container {
   display: flex;
   gap: 1rem;
@@ -383,7 +377,7 @@ button:hover {
   width: 10%;
 }
 .navigation img {
-  width: 35%;
+  width: 25%;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -560,8 +554,8 @@ button:hover {
 /* Logged in user profile view styles */
 
 .loggedInProfilePicture {
-  height: 10rem;
-  width: 10rem;
+  max-width: 9.6rem;
+  height: 9.6rem;
   border-radius: 50%;
 }
 
