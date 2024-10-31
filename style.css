@@ -13,6 +13,11 @@ body {
   background-image: linear-gradient(to right, #e22865, #37adcd);
 }
 
+#app {
+  height: 95vh;
+  width: 65vw;
+}
+
 h1 {
   text-align: center;
   color: rgb(24, 24, 24);
