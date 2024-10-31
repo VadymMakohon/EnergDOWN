@@ -37,7 +37,7 @@ function getFavoriteDrinksHtml(id) {
 function getComments(id) {
   let userProfileComments = [];
   for (let comments of model.comments) {
-    if (comments.userId == id) userProfileComments.push(comments.comment);
+    if (comments.userId == id) userProfileComments.push(comments);
   }
   return userProfileComments;
 }
@@ -45,10 +45,13 @@ function getComments(id) {
 function getCommentsHtml(id) {
   let userCommentsHtml = '';
   let comments = getComments(id);
+  let thisUsername = '';
 
   if (comments.length > 0) {
     for (const comment of comments) {
-      userCommentsHtml += `<li>${comment}</li>`;
+      if (comment.friendId == model.users.id)
+        thisUsername = getUsername(comment.friendId);
+        userCommentsHtml += `<li>${getUsername(comment.friendId)}: ${comment.comment}</li>`;
     }
   } else {
     userCommentsHtml += `<l>You don't have friends</l>`;
@@ -95,9 +98,8 @@ function getProfileGoalGraph(id) {
       }
       goalGraph = /*HTML*/ `
       <svg viewBox="0 0 32 32">
-      <circle class='${colour}' stroke-dasharray="${
-        (goal.progression / goal.goal) * 100
-      } 100"></circle>
+      <circle class='${colour}' stroke-dasharray="${(goal.progression / goal.goal) * 100
+        } 100"></circle>
       </svg>
       `;
     }

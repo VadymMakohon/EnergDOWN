@@ -45,7 +45,7 @@ function getLoggedInComments() {
 
   for (let comments of model.comments) {
     if (comments.userId == userId) {
-      userProfileComments.push(comments.comment);
+      userProfileComments.push(comments);
     }
   }
   return userProfileComments;
@@ -56,7 +56,7 @@ function getLoggedInCommentsHtml() {
   let comments = getLoggedInComments();
   for (let comment of comments) {
     if (comments.length > 0) {
-      userProfileCommentsHtml += `<li>${comment}</li>`;
+      userProfileCommentsHtml += `<li>${getUsername(comment.friendId)}: ${comment.comment}</li>`;
     } else {
       userProfileCommentsHtml += `<p>You don't have comments</p>`;
     }
