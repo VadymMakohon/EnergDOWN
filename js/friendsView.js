@@ -12,11 +12,11 @@ function updateViewFriendsList() {
             <ul id="friendsList" class="friends-list">
                 ${friendsListHTML()}
             </ul>
-            <div>
-                <input type="text" id="newFriendName" placeholder="Friend's name" />
+            </div>
+            <div class="friends-view-right">
+                <input type="text" class="search-box" id="newFriendName" placeholder="Friend's name" />
                 <button onclick="addFriend(document.getElementById('newFriendName').value)">Legg til venn <i class="fa-solid fa-user-plus"></i></button>
             </div>
-        </div>
     </div>
   `;
 
