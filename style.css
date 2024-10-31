@@ -609,6 +609,17 @@ button:hover {
   border-radius: 50%;
 }
 
+/* Add this CSS to make the paragraph blink */
+.blinking-text {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 /* Responsive adjustments for smaller screens*/
 @media (max-width: 420px) {
   body {
