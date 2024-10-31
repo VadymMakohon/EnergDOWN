@@ -51,7 +51,7 @@ function getCommentsHtml(id) {
     for (const comment of comments) {
       if (comment.friendId == model.users.id)
         thisUsername = getUsername(comment.friendId);
-        userCommentsHtml += `<li>${getUsername(comment.friendId)}: ${comment.comment}</li>`;
+        userCommentsHtml += `<li class="individualComment">${getUsername(comment.friendId)}: ${comment.comment}</li>`;
     }
   } else {
     userCommentsHtml += `<l>You don't have friends</l>`;

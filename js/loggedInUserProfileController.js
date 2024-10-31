@@ -56,7 +56,7 @@ function getLoggedInCommentsHtml() {
   let comments = getLoggedInComments();
   for (let comment of comments) {
     if (comments.length > 0) {
-      userProfileCommentsHtml += `<li>${getUsername(comment.friendId)}: ${comment.comment}</li>`;
+      userProfileCommentsHtml += `<li class="individualComment">${getUsername(comment.friendId)}: ${comment.comment}</li>`;
     } else {
       userProfileCommentsHtml += `<p>You don't have comments</p>`;
     }
