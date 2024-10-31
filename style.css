@@ -53,12 +53,26 @@ p {
 /* ------------- */
 
 /* edit goal view styles */
+.edit-goal-container {
+  display: flex;
+  flex-direction: column;
+}
+.edit-goal-container input {
+  width: 20%;
+  align-self: center;
+  padding: 0.6em;
+  border-radius: 7px;
+  border: none;
+}
 .edit-goal-btn-container {
   display: flex;
   align-self: flex-start;
 }
 .edit-goal-btn-container button {
   width: 9%;
+}
+.edit-goal-container button {
+  align-self: center;
 }
 
 /* ------- */

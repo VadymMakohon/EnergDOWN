@@ -3,7 +3,7 @@ function updateViewEditProfile() {
   ${createNavigationHtml()}
     <div class="container-acdv">
         <div class="btn-div">
-            <button class="back-btn" onClick="goToPreviousPage()">Tilbake</button>
+            <button class="back-btn" onClick="goToPreviousPage()"> Tilbake <i class="fa-solid fa-circle-left"></i></button>
         </div>
         <div class="left">
             <input type="text" placeholder="Brukernavn:" required oninput = "model.inputs.editProfilePage.username = this.value"/>
@@ -24,7 +24,7 @@ function updateViewEditProfile() {
             </label>
         </div>
         </div>
-        <button class="add-drink-btn" onclick = 'editUser()'>Endre</button>
+        <button class="add-drink-btn" onclick = 'editUser()'>Endre <i class="fa-solid fa-square-pen"></i></button>
         ${showFriendList()}
     `;
 }

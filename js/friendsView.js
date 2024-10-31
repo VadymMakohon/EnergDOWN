@@ -5,7 +5,7 @@ function updateViewFriendsList() {
     <div class="friends-view" id="friends-view">
         
         <div class="friend-view-left">
-            <button id="backBtn" class="back-btn-friends" onclick="goToPreviousPage()">Tilbake</button>
+            <button id="backBtn" class="back-btn-friends" onclick="goToPreviousPage()">Tilbake <i class="fa-solid fa-circle-left"></i></button>
         </div>
         
         <div class="friend-view-middle">
@@ -14,7 +14,7 @@ function updateViewFriendsList() {
             </ul>
             <div>
                 <input type="text" id="newFriendName" placeholder="Friend's name" />
-                <button onclick="addFriend(document.getElementById('newFriendName').value)">Add Friend</button>
+                <button onclick="addFriend(document.getElementById('newFriendName').value)">Legg til venn <i class="fa-solid fa-user-plus"></i></button>
             </div>
         </div>
     </div>
