@@ -112,3 +112,10 @@ function getRandomQuote() {
 
   return `<p>${quotes[randomNum].quote}</p>`;
 }
+
+function isDrinkFavorite(userId, drinkId){
+  for (let favorite of model.favoriteDrinks){
+    if((favorite.drinkId == drinkId) && (favorite.userId == userId)) return true;
+  }
+  return false;
+}
