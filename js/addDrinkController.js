@@ -73,13 +73,13 @@ function removeSelectedDrink() {
   let id = loggedInUserId();
   if (drinks.length > 0) {
     for (const drink of drinks) {
-      if (drink.selected) {
+      if (drink.selected && drink.userId == id) {
         console.log("yes", drink.drinkId)
         drink.drinkId = null;
         console.log("yes2", drink.drinkId)
-        updateView();
       }
       drink.selected = false;
+      updateView();
     }
   }
 
