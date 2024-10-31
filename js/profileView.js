@@ -28,7 +28,7 @@ function updateViewUserProfile() {
                 </ul>
             </div>
     </div>
-    <div class="bottom-right" id="userProfileSectionComments">
+    <div class="bottom-right bottom-right-profile" id="userProfileSectionComments">
         <div class="userProfileTitle" id="userProfileTitleComments">
             <h1>${getUsername(id)}'s kommentarer</h1>
         </div>

@@ -217,7 +217,7 @@ p {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: rgb(96, 78, 161) rgb(177, 77, 118);
-  max-height: 150px;
+  max-height: 200px;
 }
 #userProfileSectionNavigation {
   display: flex;
@@ -305,6 +305,11 @@ h1 {
 }
 #userProfileSectionNavigation-profile button {
   width: 25%;
+}
+.bottom-right-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* --- End --- */
