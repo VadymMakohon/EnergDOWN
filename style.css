@@ -611,7 +611,7 @@ button:hover {
 
 /* Make the Velkomen blink */
 .blinking-text {
-  animation: blink 1s infinite;
+  animation: blink 2s infinite;
 }
 
 @keyframes blink {
