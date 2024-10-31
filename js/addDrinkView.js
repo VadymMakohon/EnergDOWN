@@ -2,7 +2,7 @@ function updateViewAddDrink() {
   document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
     <div class="edit-goal-btn-container">
-    <button class="back-btn" onClick="goToPreviousPage()">Tilbake <i class="fa-solid fa-circle-left"></i></button>
+    <button class="back-btn" onClick="goToPage('mainPage')">Tilbake <i class="fa-solid fa-circle-left"></i></button>
 </div>
     <div class="add-drink-view">
         
