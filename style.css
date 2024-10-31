@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,11 +12,6 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   background-image: linear-gradient(to right, #e22865, #37adcd);
-}
-
-#app {
-  height: 95vh;
-  width: 65vw;
 }
 
 h1 {
@@ -43,6 +39,7 @@ p {
   z-index: 999;
   background: #91abff;
 }
+
 .friends-container a {
   text-decoration: none;
   color: rgb(151, 0, 8);
