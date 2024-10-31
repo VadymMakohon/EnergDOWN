@@ -74,6 +74,7 @@ function removeSelectedDrink() {
   if (drinks.length > 0) {
     for (const drink of drinks) {
       if (drink.selected && drink.userId == id) {
+        removeDrinkAsFavoriteWhenDeleting(drink.drinkId);
         drink.drinkId = null;
       }
       drink.selected = false;
@@ -90,6 +91,26 @@ function removeDrinkAsFavorite() {
   if (favorites.length > 0) {
     for (const drink of drinks) {
       if (drink.selected && isDrinkFavorite(id, drink.drinkId)) {
+        for (const fav of favorites) {
+          if (drink.drinkId == fav.drinkId) {
+            fav.drinkId = null;
+            fav.userId = null;
+          }
+        }
+      }
+      drink.selected = false;
+      updateView();
+    }
+  }
+}
+
+function removeDrinkAsFavoriteWhenDeleting(inputId) {
+  let favorites = model.favoriteDrinks;
+  let drinks = getDrinks();
+  let id = loggedInUserId();
+  if (favorites.length > 0) {
+    for (const drink of drinks) {
+      if (drink.drinkId == inputId && isDrinkFavorite(id, drink.drinkId)) {
         for (const fav of favorites) {
           if (drink.drinkId == fav.drinkId) {
             fav.drinkId = null;
