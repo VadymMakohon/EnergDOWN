@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body {
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,11 +15,11 @@ body {
 
 h1 {
   text-align: center;
-  color: rgb(37, 37, 37);
+  color: rgb(24, 24, 24);
 }
 
 p {
-  color: rgb(37, 37, 37);
+  color: rgb(27, 27, 27);
   font-size: 18px;
   margin-bottom: 20px;
   text-align: center;
@@ -555,7 +555,7 @@ button:hover {
   padding: 0.6em;
   border-radius: 7px;
   border: none;
-  width: 200px;
+  width: 250px;
 }
 
 #friends-view ul {
@@ -563,10 +563,29 @@ button:hover {
   flex-direction: column;
   gap: 2rem;
   color: black;
+  /* overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(96, 78, 161) rgb(177, 77, 118);
+  max-height: 250px;
+  width: 200px; */
+}
+#friends-view li {
+  gap: 2rem;
 }
 
 #friends-view li:hover {
   transform: scale(1.1);
+}
+.friends-view-right {
+  display: flex;
+  align-content: start;
+  align-items: start;
+  gap: 1rem;
+  justify-content: center;
+}
+.friends-view-right button {
+  width: 40%;
+  margin: 0;
 }
 
 /* Logged in user profile view styles */
