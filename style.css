@@ -266,6 +266,10 @@ h1 {
   cursor: pointer;
 }
 
+.individualComment {
+  background-color: #fff;
+}
+
 /* -----End----- */
 
 /* ---- profile view styles ---- */
