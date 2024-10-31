@@ -366,6 +366,9 @@ h1 {
 .drink-list li:hover {
   background-color: #666666;
 }
+.favorite-btn-container button {
+  width: 30%;
+}
 
 /* -----End----- */
 .button-container {
@@ -639,8 +642,13 @@ button:hover {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Responsive adjustments for smaller screens*/
