@@ -9,6 +9,11 @@ function createDrink() {
     image: model.inputs.addCustomDrinkPage.customDrinkImage,
     selected: model.inputs.addCustomDrinkPage.selected,
   };
+  let newFavorite = {
+    userId: userId,
+    drinkId: openId,
+  }
+  model.favoriteDrinks.push(newFavorite);
   model.drinks.push(newDrink);
   console.log(newDrink);
   console.log(model.drinks);
