@@ -45,7 +45,7 @@ function friendsListHTML() {
   let friends = allFriends();
   if (friends.length > 0) {
     for (const friend of friends) {
-      friendsHtml += `<li><a href="#" onclick = 'goToFriendProfile(${friend.id})'>${friend.username}</a></li>`;
+      friendsHtml += `<li><a href="#" class="friend-list-popup" onclick = 'goToFriendProfile(${friend.id})'>${friend.username}</a></li>`;
     }
   } else {
     friendsHtml = `<li>You don't have any friends</li>`;

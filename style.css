@@ -32,15 +32,19 @@ p {
   right: 20px;
   top: 350px;
   width: 250px;
+  height: 300px;
   border: 1px solid black;
   padding-left: 1em;
   border-radius: 5px;
   z-index: 999;
-  background: #36628d;
+  background: #91abff;
 }
 .friends-container a {
   text-decoration: none;
+  color: rgb(151, 0, 8);
+  border-bottom: 2px solid black;
 }
+
 .friends-container h3 {
   border-bottom: 1px solid black;
 }
