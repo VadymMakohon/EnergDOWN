@@ -13,21 +13,25 @@ function drinksHTML() {
 
   if (drinks.length > 0) {
     for (const drink of drinks) {
-      if (isDrinkFavorite(loggedInUserId(), drink.drinkId)) {
-        let idOfSelectedDrink = drink.drinkId;
-        if (idOfSelectedDrink != null) {
-          let drinkStyle = drink.selected ? 'gray' : 'white';
-          drinksHtml += `<li button style="background:${drinkStyle}" onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg ${favoriteStarHTML(loggedInUserId(), drink.drinkId)}`;
+      if (loggedInUserId() == drink.userId || drink.userId == null) {
+        if (isDrinkFavorite(loggedInUserId(), drink.drinkId)) {
+          let idOfSelectedDrink = drink.drinkId;
+          if (idOfSelectedDrink != null) {
+            let drinkStyle = drink.selected ? 'gray' : 'white';
+            drinksHtml += `<li button style="background:${drinkStyle}" onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg ${favoriteStarHTML(loggedInUserId(), drink.drinkId)}`;
+          }
         }
       }
     }
 
     for (const drink of drinks) {
-      if (!isDrinkFavorite(loggedInUserId(), drink.drinkId)) {
-        let idOfSelectedDrink = drink.drinkId;
-        if (idOfSelectedDrink != null) {
-          let drinkStyle = drink.selected ? 'gray' : 'white';
-          drinksHtml += `<li button style="background:${drinkStyle}" onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg ${favoriteStarHTML(loggedInUserId(), drink.drinkId)}`;
+      if (loggedInUserId() == drink.userId || drink.userId == null) {
+        if (!isDrinkFavorite(loggedInUserId(), drink.drinkId)) {
+          let idOfSelectedDrink = drink.drinkId;
+          if (idOfSelectedDrink != null) {
+            let drinkStyle = drink.selected ? 'gray' : 'white';
+            drinksHtml += `<li button style="background:${drinkStyle}" onclick="selectDrink(${idOfSelectedDrink})">${drink.name} ${drink.caffeineContent} mg ${favoriteStarHTML(loggedInUserId(), drink.drinkId)}`;
+          }
         }
       }
     }
