@@ -84,3 +84,45 @@ function removeSelectedDrink() {
   }
 
 }
+
+function removeDrinkAsFavorite() {
+  let drinks = getDrinks();
+  let id = loggedInUserId();
+  console.log(model.favoriteDrinks);
+  if (drinks.length > 0) {
+    for (const favorite of model.favoriteDrinks) {
+      console.log(favorite);
+      for( const drink of drinks){
+      if (drink.selected && isDrinkFavorite(id, drink.drinkId)) {
+        
+        
+       favorite.userId = null;
+       favorite.drinkId = null;
+       console.log(model.favoriteDrinks);
+       
+      }
+      drink.selected = false;
+    }
+      updateView();
+    }
+  }
+}
+
+function addDrinkAsFavorite() {
+  let drinks = getDrinks();
+  let id = loggedInUserId();
+  if (drinks.length > 0) {
+    for (const drink of drinks) {
+      if (drink.selected && !isDrinkFavorite(id, drink.drinkId)) {
+        
+       newFavorite = {
+        userId: id,
+        drinkId: drink.drinkId,
+       }
+       model.favoriteDrinks.push(newFavorite);
+      }
+      drink.selected = false;
+      updateView();
+    }
+  }
+}
