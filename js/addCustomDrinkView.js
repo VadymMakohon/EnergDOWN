@@ -3,7 +3,7 @@ function updateViewAddCustomDrink() {
   ${createNavigationHtml()}
     <div class="container-acdv">
     <div class="btn-div">
-    <button class="back-btn" id="backToUserProfileButton" onClick="goToPreviousPage()">Tilbake</button>
+    <button class="back-btn" id="backToUserProfileButton" onClick="goToPreviousPage()">Tilbake <i class="fa-solid fa-circle-left"></i></button>
     </div>
     <div class="left">
     
@@ -25,7 +25,7 @@ function updateViewAddCustomDrink() {
     </label>
     </div>
     </div>
-    <button class="add-drink-btn" onClick="createDrink()">Legg til</button>
+    <button class="add-drink-btn" onClick="createDrink()">Legg til <i class="fa-solid fa-check"></i></button>
         ${showFriendList()}
     
     `;
