@@ -1,5 +1,5 @@
 function updateViewMain() {
-  document.getElementById('app').innerHTML = /*HTML*/ `
+    document.getElementById('app').innerHTML = /*HTML*/ `
     ${createNavigationHtml()}
     <section class="main-view">   
             
@@ -8,7 +8,7 @@ function updateViewMain() {
                 <div class="graph">${getGoalGraph()}</div>
             </div>
             <div class="summery-main">
-                <p>Placeholder for getSummery()</p>
+                <p>Koffeinkontroll – Din Partner for et Sunnere Koffeininntak</p>
             </div>
             <div class="motivation-main">
                 <p>${getRandomQuote()}</p>
