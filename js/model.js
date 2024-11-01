@@ -404,17 +404,4 @@ const model = {
     { userId: 5, friendId: 2, comment: 'Hold fokus, du er på vei!' },
     { userId: 5, friendId: 4, comment: 'Veldig bra, fortsett sånn!' },
   ],
-
-  /* Vi tenkte også at kanskje en kan ha en liste for hver bruker med venner, men vet ikke helt om det er riktig
-    friendList: [
-        {
-            userId: 1, [
-                {
-                    userId: 2, isFriend: true
-                    userId: 3, isFriend: true
-                }
- 
-            ]
-        }
-    ],*/
 };
