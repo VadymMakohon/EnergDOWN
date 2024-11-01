@@ -8,8 +8,8 @@ function updateViewMain() {
                 <div class="graph">${getGoalGraph()}</div>
             </div>
             <div class="summery-main">
-                <p>Koffeinkontroll – Din Partner for et Sunnere Koffeininntak</p>
-            </div>
+            <p>${getSummery()}</p>
+                        </div>
             <div class="motivation-main">
                 <p>${getRandomQuote()}</p>
             </div>
