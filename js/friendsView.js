@@ -14,7 +14,7 @@ function updateViewFriendsList() {
             </ul>
             </div>
             <div class="friends-view-right">
-                <input type="text" class="search-box" id="newFriendName" placeholder="Friend's name" />
+                <input type="text" class="search-box" id="newFriendName" placeholder="Skriv inn navn" />
                 <button onclick="addFriend(document.getElementById('newFriendName').value)">Legg til venn <i class="fa-solid fa-user-plus"></i></button>
             </div>
     </div>
