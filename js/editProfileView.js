@@ -8,7 +8,7 @@ function updateViewEditProfile() {
         <div class="left">
             <input type="text" placeholder="Brukernavn:" required oninput = "model.inputs.editProfilePage.username = this.value"/>
             <input type="email" placeholder="E-post:" required oninput = "model.inputs.editProfilePage.email = this.value"/>
-            <input type="password" placeholder="Passord" required oninput = "model.inputs.editProfilePage.password = this.value"/>
+            <input type="password" placeholder="Passord:" required oninput = "model.inputs.editProfilePage.password = this.value"/>
             
             
         </div>
