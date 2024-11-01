@@ -1,7 +1,7 @@
 
 function addFriend(friendName) {
     if (!friendName.trim()) {
-        alert("Please enter a friend's name.");
+        alert("Skriv gjerne navn til en venn.");
         return;
     }
 
@@ -14,23 +14,23 @@ function addFriend(friendName) {
 
         const isDuplicate = friendsList.some(friend => friend.name === friendName);
         if (isDuplicate) {
-            alert("This friend is already in your list.");
+            alert("Den venn finnes allerede.");
             return;
         }
         let userExist = false;
         for (let user of model.users) {
             if (user.username == friendName) userExist = true;
-          }
-        if(!userExist){
+        }
+        if (!userExist) {
             document.getElementById('newFriendName').value = '';
-            alert("This does not exist.");
+            alert("Det finnes ikke.");
             return;
         }
-        
+
 
         model.friends.push({
             userId,
-            friendId 
+            friendId
         });
         alert(`${friendName} added to friends list.`);
 
