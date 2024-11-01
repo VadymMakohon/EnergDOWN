@@ -48,7 +48,7 @@ function friendsListHTML() {
       friendsHtml += `<li><a href="#" class="friend-list-popup" onclick = 'goToFriendProfile(${friend.id})'>${friend.username}</a></li>`;
     }
   } else {
-    friendsHtml = `<li>You don't have any friends</li>`;
+    friendsHtml = `<li>Du har ingen venner</li>`;
   }
   return friendsHtml;
 }
@@ -62,7 +62,7 @@ function goalsListHTML() {
       goalsHtml += `<p>Mål: ${goal.progression}mg / ${goal.goal}mg</p>`;
     }
   } else {
-    goalsHtml = `<p>You don't have any goals</p>`;
+    goalsHtml = `<p>Mål er ikke satt</p>`;
   }
   console.log(goals);
 
