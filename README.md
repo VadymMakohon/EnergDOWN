@@ -10,13 +10,13 @@ This is the [link](https://github.com/VadymMakohon/EnergDOWN) to the Github repo
 A live demo is already available via this [link](https://vadymmakohon.github.io/EnergDOWN/)
 
 ## Preview
-![startPage](https://github.com/user-attachments/assets/67f28cba-df0c-4da1-bf24-7939ed3165c8)
+![startPage](https://github.com/user-attachments/assets/0585c3b7-de5d-408b-add8-2e229a1e86b9)
 
-![goal](https://github.com/user-attachments/assets/683b0e4f-e5c1-4f82-ad15-17a29ce3398e)
+![profile](https://github.com/user-attachments/assets/0558964e-4bbe-436c-a8ad-2187624ede81)
 
-![profileView](https://github.com/user-attachments/assets/8782dc68-c984-49a5-9d92-09b80187968b)
+![goal](https://github.com/user-attachments/assets/d228721e-4b60-48a5-b738-9b904a91f918)
 
-![addDrinks](https://github.com/user-attachments/assets/0ec62c87-dd09-4c83-b029-7940aa508065)
+![favoriteDrink](https://github.com/user-attachments/assets/1d71e087-00d5-4f08-b489-8fca92de8227)
 
 ## Features
 
