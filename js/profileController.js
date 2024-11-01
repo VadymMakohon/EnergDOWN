@@ -54,7 +54,7 @@ function getCommentsHtml(id) {
         userCommentsHtml += `<li class="individualComment">${getUsername(comment.friendId)}: ${comment.comment}</li>`;
     }
   } else {
-    userCommentsHtml += `<l>Du har ingen venner</l>`;
+    userCommentsHtml += `<l>Du har ingen kommentarer</l>`;
   }
 
   return userCommentsHtml;
