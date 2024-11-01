@@ -34,7 +34,7 @@ function getLoggedInFavoriteDrinksHtml() {
       userProfileDrinksHtml += `<li>${drink.name} ${drink.caffeineContent}mg <img src="img/tiny-star.png"/></li>`;
     }
   } else {
-    userProfileDrinksHtml = `<p>You dont have favorite drinks</p> `;
+    userProfileDrinksHtml = `<p>Du har ingen favorittdrikker</p> `;
   }
   return userProfileDrinksHtml;
 }
@@ -58,7 +58,7 @@ function getLoggedInCommentsHtml() {
     if (comments.length > 0) {
       userProfileCommentsHtml += `<li class="individualComment">${getUsername(comment.friendId)}: ${comment.comment}</li>`;
     } else {
-      userProfileCommentsHtml += `<p>You don't have comments</p>`;
+      userProfileCommentsHtml += `<p>Du har ingen kommentarer</p>`;
     }
   }
   return userProfileCommentsHtml;
