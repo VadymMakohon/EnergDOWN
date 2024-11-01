@@ -29,7 +29,7 @@ function getFavoriteDrinksHtml(id) {
       drinksHtml += `<li>${drink.name} ${drink.caffeineContent}mg <img src="img/tiny-star.png"/></li>`;
     }
   } else {
-    drinksHtml += `<l>No Favorite Drinks</l>`;
+    drinksHtml += `<l>Ingen favorittdrikker valgt</l>`;
   }
   return drinksHtml;
 }
@@ -54,7 +54,7 @@ function getCommentsHtml(id) {
         userCommentsHtml += `<li class="individualComment">${getUsername(comment.friendId)}: ${comment.comment}</li>`;
     }
   } else {
-    userCommentsHtml += `<l>You don't have friends</l>`;
+    userCommentsHtml += `<l>Du har ingen venner</l>`;
   }
 
   return userCommentsHtml;
@@ -69,7 +69,7 @@ function getProfileGoalsListHTML(id) {
       goalsHtml += `<p>Mål: ${goal.progression}mg / ${goal.goal}mg</p>`;
     }
   } else {
-    goalsHtml = `<p>You don't have any goals</p>`;
+    goalsHtml = `<p>Mål er ikke satt</p>`;
   }
   console.log(goals);
 
