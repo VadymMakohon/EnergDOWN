@@ -358,10 +358,11 @@ h1 {
 
 .drink-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px);
   gap: 0.2rem;
   padding: 0.5rem;
   justify-content: center;
+  /* width: 100%; */
 }
 
 .drink-list li {
@@ -370,7 +371,7 @@ h1 {
   padding: 0.5rem;
   cursor: pointer;
   align-items: center;
-  align-self: center;
+  /* align-self: center; */
   justify-content: center;
 }
 
