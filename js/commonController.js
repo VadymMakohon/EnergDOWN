@@ -113,6 +113,13 @@ function getRandomQuote() {
   return `<p>${quotes[randomNum].quote}</p>`;
 }
 
+function getRandomSuggestion() {
+  let suggestions = model.suggestions;
+  let randomNum = Math.floor(Math.random() * suggestions.length);
+
+  return `<p>${suggestions[randomNum].suggestion}</p>`;
+}
+
 function isDrinkFavorite(userId, drinkId){
   for (let favorite of model.favoriteDrinks){
     if((favorite.drinkId == drinkId) && (favorite.userId == userId)) return true;

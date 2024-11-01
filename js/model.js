@@ -311,6 +311,25 @@ const model = {
     { userId: 5, friendId: 4 },
   ],
 
+  suggestions: [
+    {
+      suggestionId: 0,
+      suggestion: 'Dagelig koffeininntak over 500mg kan være helseskadelig!',
+    },
+    {
+      suggestionId: 1,
+      suggestion: 'Kroppsvekt er en viktig faktor for hvor mye koffein du tåler!',
+    },
+    {
+      suggestionId: 2,
+      suggestion: 'Daglig inntak over 5,7 mg/kg kroppsvekt kan gi generelle negative helseeffekter!',
+    },
+    {
+      suggestionId: 3,
+      suggestion: 'Et koffeininntak på rundt 400 mg koffein per dag (tilsvarende opptil 5 kopper kaffe) kan nytes som en del av en sunn balansert diett og en aktiv livsstil.',
+    },
+  ],
+
   quotes: [
     {
       quoteId: 0,
