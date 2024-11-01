@@ -54,12 +54,16 @@ function getLoggedInComments() {
 function getLoggedInCommentsHtml() {
   let userProfileCommentsHtml = '';
   let comments = getLoggedInComments();
-  for (let comment of comments) {
-    if (comments.length > 0) {
-      userProfileCommentsHtml += `<li class="individualComment">${getUsername(comment.friendId)}: ${comment.comment}</li>`;
-    } else {
-      userProfileCommentsHtml += `<p>Du har ingen kommentarer</p>`;
+
+  if (comments.length > 0) {
+    for (let comment of comments) {
+      userProfileCommentsHtml += `<li class="individualComment">${getUsername(
+        comment.friendId
+      )}: ${comment.comment}</li>`;
     }
+  } else {
+    userProfileCommentsHtml = `<p>Du har ingen kommentarer</p>`;
   }
+
   return userProfileCommentsHtml;
 }
