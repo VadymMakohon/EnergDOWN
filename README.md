@@ -1,6 +1,12 @@
 # EnergDOWN
 
 The EnergDOWN app is an online tool designed to help you and your friends keep track of caffeine intake. The app allows users to set personal caffeine goals, track daily intake, and motivate each other to reduce or control consumption. The application is designed with a clean, responsive interface for use on both desktop and mobile devices.
+## Preview
+![startPage](https://github.com/user-attachments/assets/67f28cba-df0c-4da1-bf24-7939ed3165c8)
+
+![profileView](https://github.com/user-attachments/assets/8782dc68-c984-49a5-9d92-09b80187968b)
+
+![addDrinks](https://github.com/user-attachments/assets/0ec62c87-dd09-4c83-b029-7940aa508065)
 
 ## Features
 
