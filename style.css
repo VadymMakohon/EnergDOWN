@@ -26,6 +26,10 @@ p {
   text-align: center;
 }
 
+.summery-main p {
+  font-weight: bold;
+}
+
 /* friend list styles */
 .friends-container {
   position: absolute;
