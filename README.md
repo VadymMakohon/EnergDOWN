@@ -54,6 +54,10 @@ This is the [link](https://github.com/VadymMakohon/EnergDOWN) to the Github repo
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+### Show your support
+
+Give a ⭐ if you like these projects!
+
 # Contributors
 
 - [Vadym Makohon](https://github.com/VadymMakohon)
