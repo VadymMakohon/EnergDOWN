@@ -45,6 +45,7 @@ A live demo is already available via this [link](https://vadymmakohon.github.io/
 - HTML5 / CSS3
 - MVC: Model, View, Controller
 - JavaScript
+- Using KANBAN methodology
 - Trello
 
 ## Github repo
