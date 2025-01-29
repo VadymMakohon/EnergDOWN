@@ -6,7 +6,7 @@ The EnergDOWN app is an online tool designed to help you and your friends keep t
 
 A live demo is already available via this [link](https://vadymmakohon.github.io/EnergDOWN/)
 
-## Preview
+## 🖥️ Preview
 ![startPage](https://github.com/user-attachments/assets/0585c3b7-de5d-408b-add8-2e229a1e86b9)
 
 ![profile](https://github.com/user-attachments/assets/0558964e-4bbe-436c-a8ad-2187624ede81)
